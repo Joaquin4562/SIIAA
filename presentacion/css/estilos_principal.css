@@ -1,0 +1,61 @@
+
+.btn-iniciar{
+    background-color: transparent;
+    color: #ffffff;
+}
+.columna{
+    margin-left: 100px;
+    margin-top: 20px;
+}
+.texto-SIIAA{
+    font-size: 20px;
+    color: #ffffff;
+    font-family: sans-serif;
+    text-align: justify;
+}
+.btn{
+    width: 200px;
+}
+.txt-1{
+    text-align: center;
+    color: #ffffff;
+}
+.txt-2{
+    text-align: center;
+    font-weight: lighter;
+    color: #ffffff;
+}
+.contenido-main{
+    margin-top: 200px;
+}
+.bg-principal{
+    background: url('../img/imagenportada2.png') no-repeat;
+    width: 100%;
+    height: 130vh;
+    background-size: 100%;
+}
+@media (min-width: 10px){
+    .bg-principal{
+        background-size: 350%;
+    }
+}
+@media (min-width: 678px){
+    .bg-principal{
+        background-size: 250%;
+    }
+}
+@media (min-width: 878px){
+    .bg-principal{
+        background-size: 150%;
+    }
+}
+@media (min-width: 927px){
+    .bg-principal{
+        background-size: 130%;
+    }
+}
+@media (min-width: 1000px){
+    .bg-principal{
+        background-size: 100%;
+    }
+}
