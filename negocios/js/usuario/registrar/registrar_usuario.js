@@ -61,7 +61,7 @@ function registrar_usuario(ev) {
         token;
 
     peticion = new XMLHttpRequest();
-    peticion.open("POST", "http://127.0.0.1/SIIAA/php/registro_usuario.php");
+    peticion.open("POST", "/negocios/php/usuario/registrar/registro_usuario.php");
     peticion.setRequestHeader(
         "Content-Type",
         "application/x-www-form-urlencoded"
@@ -69,14 +69,14 @@ function registrar_usuario(ev) {
 
 
     peticion.onload = function () {
-        // var response = JSON.parse(peticion.responseText);
+        var response = JSON.parse(peticion.responseText);
 
-        // if (response.error) {
-        //     alert(error);
-        //     return;
-        // }
+        if (response.error) {
+            alert(error);
+            return;
+        }
 
-        // alert("Registro exitoso");
+        alert("Registro exitoso");
 
         $("#fm-modal").modal("hide");
 
