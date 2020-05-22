@@ -1,3 +1,5 @@
+// TODO: MODIFICAR PARA ADECUAR A LA PANTALLAS CAMBIADAS
+
 var btnConfirmar = document.getElementById("btn-confirmar"),
     btnRegistrarse = document.getElementById("btn-registrarse");
 
@@ -19,9 +21,9 @@ var nombres,
     confCont;
 
 function registrar_usuario(ev) {
-    var peticion;
-    var token;
-    var params;
+    var peticion,
+        token,
+        params;
 
     token = document.getElementById("token").value;
     token = token.trim();
@@ -69,7 +71,8 @@ function registrar_usuario(ev) {
 
 
     peticion.onload = function () {
-        var response = JSON.parse(peticion.responseText);
+        var response;
+        response = JSON.parse(peticion.responseText);
 
         if (response.error) {
             alert(error);
