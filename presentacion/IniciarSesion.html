@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Navbar</title>
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <title>Navbar</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/estilos.css">
 	<style>
@@ -49,12 +50,10 @@
       }
     }
   </script>
-
 </head>
-    
-    
-<body>
 
+
+<body>
 <!--estilos:	navbar navbar-expand-lg navbar-light bg-light-->
 <!--            navbar navbar-expand-lg navbar-dark bg-dark -->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -66,29 +65,29 @@
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Menu de Navegacion">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			
-            
-			<div class="collapse navbar-collapse" id="navbar">
-				<ul class="navbar-nav mr-auto">
-				</ul>
-				
-               <div class="collapse navbar-collapse" id="navbar">
-				<ul class="navbar-nav mr-auto">
-                    
-				</ul>
-                   
-<!--       <button class="btn  navbar-toggler-icon my-s my-sm-0 mr-2" type="submit"></button>            -->
-				
-                   <a href="Registrarse.html" type="submit" class="btn btn-success">Registrarse</a>
-			</div> 
-                
-			</div>  
-	</nav>
-    
-    
-    
-    
-        <section class="container-fluid bg">
+
+
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav mr-auto">
+
+                </ul>
+
+                <!--       <button class="btn  navbar-toggler-icon my-s my-sm-0 mr-2" type="submit"></button>            -->
+
+                <a href="Registrarse.html" type="submit" class="btn btn-success">Registrarse</a>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+
+    <section class="container-fluid bg">
         <section class="row justify-content-center">
         <section class="col-8 col-sm-6 col-md-3">
             
@@ -117,24 +116,25 @@
                         <h2 class="modal-title" id="">Recuperar contraseña</h2>
                           <button class="close" data-dismiss="modal" aria-label="Cerrar">
                           <span aria-hidden="true">&times;</span>
-                          </button>    
-                        </div>
-                        
-                        <div class="modal-body">
-                            <h5>Ingrese su correo para recuperar su contraseña</h5>
-                            <div class="form-group">    
-                                <label for="correo:">Correo:</label>
-                                <input type="email" class="form-control" id="correorecuperar" placeholder="Ingrese su correo">
-                                <small id="emailHelp" class="form-text text-muted">Ejemplo del correo: RaulLiderDev@itsmante.edu.mx.</small>
+                          </button>
+                                </div>
+                                <form name='frmRecupera' id="frmRecupera" class="frmRecupera" method="" action="#" onsubmit="return form_clic(frmRecupera)">
+                                    <div class="modal-body">
+                                        <h5>Ingrese su correo para recuperar su contraseña</h5>
+                                        <div class="form-group">
+                                            <label for="correo:">Correo:</label>
+                                            <input id="correoRecuperar" name="correoRecuperar" type="email" class="form-control" placeholder="Ingrese su correo">
+                                            <small id="emailHelp" class="form-text text-muted">Ejemplo del correo: RaulLiderDev@itsmante.edu.mx.</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                        <button class="btn btn-primary" onclick="form_click()" type="submit" form="frmRecupera">Recuperar</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
-                        
-                        <div class="modal-footer">
-                        <button class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                        <button class="btn btn-primary">Recuperar</button>
-                        </div>
-                        
-                      </div>
                     </div>
                   </div> 
             
@@ -150,29 +150,26 @@
         </section>
         </section>
     </section>
-    
-    
-    
-  
-    
-    
- 
-    
-   <footer class="page-footer py-2 text-xs-center mt-5">
+
+
+
+
+
+
+
+
+    <footer class="page-footer py-2 text-xs-center mt-5">
         <div class="contenedor-footer mt-2">
-            
+
             <div class="container content-foo">
                 <h5 class="titulo-final">Carretera Federal Libre Mante-Valles Km. 6.7, Cong Quintero, Tamaulipas; C.P.89930</h5>
                 <h5 class="titulo-final">TELS (831) 23 3 66 66 Y (831) 23 3 66 70, </h5>
                 <h5 class="titulo-final">e-mail: direccion@itsmante.edu.mx</h5>
                 <h5 class="titulo-final">www.itsmante.edu.mx</h5>
             </div>
-            
+
         </div>
     </footer>
- 
- 
-
    
   <script type="text/javascript" src="/negocios/js/shared/login/login.js"></script>
 	<script src="js/jquery-3.2.1.min.js"></script>
@@ -182,4 +179,10 @@
     
 </html>
 
+    <script type="text/javascript" src="../datos/recuperaLogic/js/recupera.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
 
+</html>
