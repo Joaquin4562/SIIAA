@@ -12,11 +12,49 @@
 			padding-top: 50px;
 			/*padding-bottom: 100px;*/
 		}
-	</style>
+  </style>
+
+  <script type="text/javascript">
+    if (localStorage.getItem('sesion')) {
+      if (localStorage.getItem('sesion') == 'true') {
+          var datosUsuario;
+          datosUsuario = JSON.parse(localStorage.getItem('datos'));
+
+          // TODO: AGREGAR DIRECCIÓN DE LA PÁGINA PRINCIPAL
+          switch (datosUsuario.idAreas) {
+              case '1':
+                  break;
+              case '2':
+                  break;
+              default:
+                  break;
+          }
+          alert('Hola, ' + datosUsuario.nombres);
+      }
+    } else if (sessionStorage.getItem('sesion')) {
+      if (sessionStorage.getItem('sesion') == 'true') {
+          var datosUsuario;
+          datosUsuario = JSON.parse(sessionStorage.getItem('datos'));
+
+          // TODO: AGREGAR DIRECCIÓN DE LA PÁGINA PRINCIPAL
+          switch (datosUsuario.idAreas) {
+              case '1':
+                  break;
+              case '2':
+                  break;
+              default:
+                  break;
+          }
+          alert('Hola, ' + datosUsuario.nombres);
+      }
+    }
+  </script>
+
 </head>
     
     
 <body>
+
 <!--estilos:	navbar navbar-expand-lg navbar-light bg-light-->
 <!--            navbar navbar-expand-lg navbar-dark bg-dark -->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -64,7 +102,7 @@
             
               <div class="form-group">
                 <label for="contraseña">Contraseña:</label>
-                <input type="password" class="form-control" id="contraseña" placeholder="Ingrese su contraseña">
+                <input type="password" class="form-control" id="contrasena" placeholder="Ingrese su contraseña">
                 <a href="#" data-toggle="modal" data-target="#fm-modal">¿Olvidaste tu contraseña?</a><br>
               </div>
             
@@ -106,7 +144,7 @@
                 <input type="checkbox" class="form-check-input" id="recordar">
                 <label class="form-check-label" for="recordar">Recordar contraseña</label> 
                   </div>
-              <a href="#" type="submit" class="btn btn-primary btn-block">Iniciar sesión</a>
+              <button type="button" class="btn btn-primary btn-block" id="btn-inicio">Iniciar sesión</button>
             </form>
             
         </section>
@@ -136,7 +174,7 @@
  
 
    
-
+  <script type="text/javascript" src="/negocios/js/shared/login/login.js"></script>
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

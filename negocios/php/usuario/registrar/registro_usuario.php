@@ -1,46 +1,47 @@
+<!-- TODO: MODIFICAR PARA ADECUAR A LOS CAMBIOS EN LAS PANTALLAS -->
 <?php
 
 error_reporting(0);
 header('Access-Control-Allow-Origin: *');
 header('Content-type: application/json; charset=utf-8');
 
-require 'conexion.php';
+require '/datos/conexion.php';
 
 $response = array();
 
-$nombres = $_POST['nombres'];
-$apePat = $_POST['apePat'];
-$apeMat = $_POST['apeMat'];
-$fechaNac = $_POST['fechaNac'];
-$celular = $_POST['celular'];
-$cp = $_POST['cp'];
-$ciudad = $_POST['ciudad'];
-$estado = $_POST['estado'];
-$municipio = $_POST['municipio'];
-$colonia = $_POST['colonia'];
-$calle = $_POST['calle'];
-$numInt = $_POST['numInt'];
-$numExt = $_POST['numExt'];
-$correo = $_POST['correo'];
+$nombres    = $_POST['nombres'];
+$apePat     = $_POST['apePat'];
+$apeMat     = $_POST['apeMat'];
+$fechaNac   = $_POST['fechaNac'];
+$celular    = $_POST['celular'];
+$cp         = $_POST['cp'];
+$ciudad     = $_POST['ciudad'];
+$estado     = $_POST['estado'];
+$municipio  = $_POST['municipio'];
+$colonia    = $_POST['colonia'];
+$calle      = $_POST['calle'];
+$numInt     = $_POST['numInt'];
+$numExt     = $_POST['numExt'];
+$correo     =   $_POST['correo'];
 $contrasena = $_POST['contrasena'];
-$token = $_POST['token'];
+$token      = $_POST['token'];
 
-$nombres = filter_var($nombres, FILTER_SANITIZE_STRING);
-$apePat = filter_var($apePat, FILTER_SANITIZE_STRING);
-$apeMat = filter_var($apeMat, FILTER_SANITIZE_STRING);
-$fechaNac = filter_var($fechaNac, FILTER_SANITIZE_STRING);
-$celular = filter_var($celular, FILTER_SANITIZE_STRING);
-$cp = filter_var($cp, FILTER_SANITIZE_STRING);
-$ciudad = filter_var($ciudad, FILTER_SANITIZE_STRING);
-$estado = filter_var($estado, FILTER_SANITIZE_STRING);
-$municipio = filter_var($municipio, FILTER_SANITIZE_STRING);
-$colonia = filter_var($colonia, FILTER_SANITIZE_STRING);
-$calle = filter_var($calle, FILTER_SANITIZE_STRING);
-$numInt = filter_var($numInt, FILTER_SANITIZE_STRING);
-$numExt = filter_var($numExt, FILTER_SANITIZE_STRING);
-$correo = filter_var($correo, FILTER_SANITIZE_STRING);
-$contrasena = filter_var($contrasena, FILTER_SANITIZE_STRING);
-$token = filter_var($token, FILTER_SANITIZE_STRING);
+$nombres    = htmlspecialchars(filter_var($nombres, FILTER_SANITIZE_STRING));
+$apePat     = htmlspecialchars(filter_var($apePat, FILTER_SANITIZE_STRING));
+$apeMat     = htmlspecialchars(filter_var($apeMat, FILTER_SANITIZE_STRING));
+$fechaNac   = htmlspecialchars(filter_var($fechaNac, FILTER_SANITIZE_STRING));
+$celular    = htmlspecialchars(filter_var($celular, FILTER_SANITIZE_STRING));
+$cp         = htmlspecialchars(filter_var($cp, FILTER_SANITIZE_STRING));
+$ciudad     = htmlspecialchars(filter_var($ciudad, FILTER_SANITIZE_STRING));
+$estado     = htmlspecialchars(filter_var($estado, FILTER_SANITIZE_STRING));
+$municipio  = htmlspecialchars(filter_var($municipio, FILTER_SANITIZE_STRING));
+$colonia    = htmlspecialchars(filter_var($colonia, FILTER_SANITIZE_STRING));
+$calle      = htmlspecialchars(filter_var($calle, FILTER_SANITIZE_STRING));
+$numInt     = htmlspecialchars(filter_var($numInt, FILTER_SANITIZE_STRING));
+$numExt     = htmlspecialchars(filter_var($numExt, FILTER_SANITIZE_STRING));
+$correo     = htmlspecialchars(filter_var($correo, FILTER_SANITIZE_EMAIL));
+$contrasena = htmlspecialchars(filter_var($contrasena, FILTER_SANITIZE_STRING));
+$token      = htmlspecialchars(filter_var($token, FILTER_SANITIZE_STRING));
 
 $hashContrasena = hash('sha256', $contrasena);
 
