@@ -21,6 +21,7 @@ async function login() {
     );
 
     peticion.onload = function () {
+        $("#fn-modal").modal('hide');
         var response;
         response = JSON.parse(peticion.responseText);
 
@@ -67,12 +68,13 @@ async function login() {
 }
 
 function obtenerDatos(ev) {
+
     correo = document.getElementById("correo").value,
     contrasena = document.getElementById("contrasena").value;
-
+    
     correo = correo.trim();
     contrasena = contrasena.trim();
-
+    
     if (validarCampos()) {
         alert("Llene todos los campos");
         return;
@@ -81,6 +83,9 @@ function obtenerDatos(ev) {
         alert("Ingrese un correo válido");
         return;
     }
+
+    $('#fn-modal').modal('show');
+
     login();
 }
 

@@ -19,6 +19,9 @@ var nombres,
     confCont;
 
 function registrar_usuario(ev) {
+
+    $("#fn-modal").modal("show");
+
     var peticion, token, params;
 
     token = document.getElementById("token").value;
@@ -77,8 +80,8 @@ function registrar_usuario(ev) {
             return;
         }
 
+        $("#fn-modal").modal("hide");
         alert("Registro exitoso");
-
         $("#fm-modal").modal("hide");
 
         location.href = "/presentacion/IniciarSesion.html";
@@ -296,10 +299,7 @@ function validarNumInt() {
 
 function validarCorreo() {
     var regexCorreo = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    if (correo.length > 60) {
-        correo = correo.substring(0, 60);
-    }
-    if (!regexCorreo.test(correo)) {
+    if (!regexCorreo.test(correo) || correo.length > 60) {
         alert("Ingrese un correo válido");
         return false;
     }
