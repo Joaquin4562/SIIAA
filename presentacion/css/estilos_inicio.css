@@ -1,0 +1,156 @@
+body {
+	background: #e9ebee;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+
+main .contenido-principal{
+    background: white;
+}
+
+
+main .barra-lateral-derecha{
+        background: white;
+}
+
+
+a:hover { text-decoration: underline; }
+
+/* --- --- HEADER --- --- */
+header {
+	background: #707070;
+	padding: 10px 0;
+}
+
+header .tec {
+
+color: white;
+padding: 10px
+
+}
+
+header .logo img {
+	height: 30px;
+}
+
+/* BUSCAR */
+header .buscar form input[type="text"] {
+	width: 100%;
+	background: #fff;
+	border: none;
+	font-size: 12px;
+	padding: 0 10px;
+	height: 25px;
+	line-height: 25px;
+	border-radius: 3px 0 0 3px;
+	color: #6d6d6d;
+	font-family: 'Open Sans', sans-serif;
+}
+
+header .buscar form button {
+	width: 100%;
+	background: #fff;
+	border: none;
+	font-size: 12px;
+	padding: 0 10px;
+	height: 25px;
+	line-height: 25px;
+	border-radius: 0 3px 3px 0;
+	cursor: pointer;
+	color: #6d6d6d;
+}
+
+header .buscar form button:hover {
+	background: #099efc;
+	color: #fff;
+}
+
+/* MENU */
+header .menu {
+	padding: 0;
+	
+}
+
+header .menu a {
+	color: rgba(255,255,255,.8);
+	text-decoration: none;
+	
+}
+
+header .menu a:hover {
+	color: rgba(255,255,255,1);
+}
+
+header .menu .imagen {
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	overflow: hidden;
+}
+
+header .menu .imagen img {
+	border-radius: 100px;
+}
+
+/* --- --- MAIN --- --- */
+main {
+	padding-top: 20px;
+}
+
+/* --- --- BARRA LATERAL IZQUIERDA --- --- */
+
+main .barra-lateral-izquierda .foto a {
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	overflow: hidden;
+	border-radius: 100px;
+	margin-top: 20px;
+
+}
+
+main .barra-lateral-izquierda  img {
+	width: 100%;
+}
+
+main .barra-lateral-izquierda {
+	padding-bottom: 10px;
+	padding-left: 0;
+    background: white;
+}
+
+main .barra-lateral-izquierda .nombre{
+	border-bottom: 1px solid #c7c8ca;
+	padding-bottom: 10px;
+}
+
+main .imgperfil .foto {
+	padding-bottom: 10px;
+	padding-left: 0;
+}
+
+main .barra-lateral-izquierda nav {
+	border-bottom: 1px solid #c7c8ca;
+	padding-bottom: 20px;
+}
+
+main .barra-lateral-izquierda nav a {
+	display: block;
+	padding: 3px;
+	font-family: 'Roboto', sans-serif;
+	color: #3d3d3d;
+}
+
+
+
+main .barra-lateral-izquierda nav a:hover {
+	background: #f2f2f2;
+	text-decoration: none;
+}
+
+main .barra-lateral-izquierda nav a i {
+	margin-right: 10px;
+}
+
+
+
