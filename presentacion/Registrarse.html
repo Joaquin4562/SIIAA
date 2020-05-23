@@ -32,7 +32,8 @@
                     default:
                         break;
                 }
-                alert('Hola, ' + datosUsuario.nombres);
+                // alert('Hola, ' + datosUsuario.nombres);
+                location.href = '/presentacion/Inicio.html';
             }
         } else if (sessionStorage.getItem('sesion')) {
             if (sessionStorage.getItem('sesion') == 'true') {
@@ -48,7 +49,8 @@
                     default:
                         break;
                 }
-                alert('Hola, ' + datosUsuario.nombres);
+                // alert('Hola, ' + datosUsuario.nombres);
+                location.href = '/presentacion/Inicio.html';
             }
         }    
     </script>
@@ -191,7 +193,7 @@
         
         
         <!--             modal carga-->
-             <div class="modal fade" id="fn-modal" tabindex="-1" role="dialog" aria-labelledby="fn-modal" aria-hidden="true">
+             <div class="modal" id="fn-modal" tabindex="-1" role="dialog" aria-labelledby="fn-modal" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content ">       
                         <div class="pre-loader">

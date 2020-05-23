@@ -11,18 +11,30 @@ async function login() {
     params = "correo=" + correo + "&contrasena=" + contrasena;
 
     peticion = new XMLHttpRequest();
-    peticion.open("POST", "/negocios/php/shared/login/login.php");
+    peticion.open(
+        "POST",
+        "http://mante.hosting.acm.org/SIIAA_backend/negocios/php/shared/login/login.php"
+    );
     peticion.setRequestHeader(
         "Content-Type",
         "application/x-www-form-urlencoded"
     );
 
     peticion.onload = function () {
+        $("#fn-modal").modal('hide');
         var response;
         response = JSON.parse(peticion.responseText);
 
         if (response.error) {
-            alert(error);
+            switch (response.error) {
+                case "Password":
+                    alert('Contraseña incorrecta');
+                    break;
+                case "Account":
+                    alert('No se encontró tu cuenta');
+                default:
+                    break;
+            }
             return;
         }
 
@@ -43,7 +55,8 @@ async function login() {
 
                 break;
         }
-        alert('Hola, ' + response.nombres);
+        // alert('Hola, ' + response.nombres);
+        location.href = "/presentacion/Inicio.html";
     };
 
     peticion.onreadystatechange = function () {
@@ -51,17 +64,17 @@ async function login() {
             alert("Ocurrio un error, por favor inténtelo más tarde");
         }
     };
-
     peticion.send(params);
 }
 
 function obtenerDatos(ev) {
-    (correo = document.getElementById("correo").value),
-        (contrasena = document.getElementById("contrasena").value);
 
+    correo = document.getElementById("correo").value,
+    contrasena = document.getElementById("contrasena").value;
+    
     correo = correo.trim();
     contrasena = contrasena.trim();
-
+    
     if (validarCampos()) {
         alert("Llene todos los campos");
         return;
@@ -70,6 +83,9 @@ function obtenerDatos(ev) {
         alert("Ingrese un correo válido");
         return;
     }
+
+    $('#fn-modal').modal('show');
+
     login();
 }
 
