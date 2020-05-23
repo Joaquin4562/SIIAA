@@ -54,7 +54,8 @@ async function login() {
 
                 break;
         }
-        alert('Hola, ' + response.nombres);
+        // alert('Hola, ' + response.nombres);
+        location.href = "/presentacion/Inicio.html";
     };
 
     peticion.onreadystatechange = function () {
