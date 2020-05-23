@@ -3,7 +3,10 @@ var contra;
 
 function recuperaContra() {
     var peticion = new XMLHttpRequest();
-    peticion.open('POST', '../datos/recuperaLogic/recupera.php');
+    peticion.open(
+        "POST",
+        "http://mante.hosting.acm.org/SIIAA_backend/negocios/php/shared/recuperar_contrasena/recuperar_contrasena.php"
+    );
     correo_electronico = document.getElementById('correoRecuperar').value;
     if (formularioValido()) {
         var parametros = 'correo_electronico=' + correo_electronico + '&contraseña=' + contra;

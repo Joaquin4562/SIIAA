@@ -11,7 +11,10 @@ async function login() {
     params = "correo=" + correo + "&contrasena=" + contrasena;
 
     peticion = new XMLHttpRequest();
-    peticion.open("POST", "/negocios/php/shared/login/login.php");
+    peticion.open(
+        "POST",
+        "http://mante.hosting.acm.org/SIIAA_backend/negocios/php/shared/login/login.php"
+    );
     peticion.setRequestHeader(
         "Content-Type",
         "application/x-www-form-urlencoded"
@@ -22,7 +25,15 @@ async function login() {
         response = JSON.parse(peticion.responseText);
 
         if (response.error) {
-            alert(error);
+            switch (response.error) {
+                case "Password":
+                    alert('Contraseña incorrecta');
+                    break;
+                case "Account":
+                    alert('No se encontró tu cuenta');
+                default:
+                    break;
+            }
             return;
         }
 
@@ -51,13 +62,12 @@ async function login() {
             alert("Ocurrio un error, por favor inténtelo más tarde");
         }
     };
-
     peticion.send(params);
 }
 
 function obtenerDatos(ev) {
-    (correo = document.getElementById("correo").value),
-        (contrasena = document.getElementById("contrasena").value);
+    correo = document.getElementById("correo").value,
+    contrasena = document.getElementById("contrasena").value;
 
     correo = correo.trim();
     contrasena = contrasena.trim();
