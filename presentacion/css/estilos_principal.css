@@ -1,61 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-size: cover;
+ }
 
-.btn-iniciar{
-    background-color: transparent;
-    color: #ffffff;
+body {
+    font-family: 'open sans';
 }
-.columna{
-    margin-left: 100px;
-    margin-top: 20px;
-}
-.texto-SIIAA{
-    font-size: 20px;
-    color: #ffffff;
-    font-family: sans-serif;
-    text-align: justify;
-}
-.btn{
-    width: 200px;
-}
-.txt-1{
+
+.titulo {
+    color: #4e4e4e;
+    font-size: 30px;
     text-align: center;
-    color: #ffffff;
+    margin-bottom: 30px;
 }
-.txt-2{
-    text-align: center;
-    font-weight: lighter;
-    color: #ffffff;
-}
-.contenido-main{
-    margin-top: 200px;
-}
-.bg-principal{
-    background: url('../img/imagenportada2.png') no-repeat;
+
+header {
     width: 100%;
-    height: 130vh;
-    background-size: 100%;
+    height: 550px;
+    background: #667db6; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #234bb1b9, #0082c8bd, #0082c8b7, #1747c0b4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: url(../img/imagenportada2.png);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
 }
-@media (min-width: 10px){
-    .bg-principal{
-        background-size: 350%;
+
+header .textos-header{
+    display: flex;
+    height: 500px;
+    width: 100%;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    text-align:center;
+}
+
+.textos-header h1{
+    font-size: 35px;
+    color:#fff;
+}
+
+.textos-header h2{
+    font-size: 32px;
+    font-weight: 300;
+    color:#fff;
+}
+
+.texto-contenido h3{
+    font-size: 15px;
+    font-weight: 300;
+    color:#000;
+    align-content: center;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.contenedor-informacion{
+    padding: 5px 0;
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo {
+    color: #4e4e4e;
+    font-size: 16px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+    }
+    .imagen-about-us{
+        width: 90%;
     }
 }
-@media (min-width: 678px){
-    .bg-principal{
-        background-size: 250%;
-    }
-}
-@media (min-width: 878px){
-    .bg-principal{
-        background-size: 150%;
-    }
-}
-@media (min-width: 927px){
-    .bg-principal{
-        background-size: 130%;
-    }
-}
-@media (min-width: 1000px){
-    .bg-principal{
-        background-size: 100%;
-    }
-}
+
+
+
+
+

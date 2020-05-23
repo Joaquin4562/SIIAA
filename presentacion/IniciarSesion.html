@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Navbar</title>
+    <title>SIIAA</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/global.css">
@@ -11,7 +11,6 @@
 	<style>
 		body {
 			padding-top: 50px;
-			/*padding-bottom: 100px;*/
 		}
   </style>
 
@@ -50,13 +49,17 @@
       }
     }
   </script>
+     
+    
+    
 </head>
-
-
+    
 <body>
 <!--estilos:	navbar navbar-expand-lg navbar-light bg-light-->
 <!--            navbar navbar-expand-lg navbar-dark bg-dark -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 			<a href="#" class="navbar-brand">
             <img src="img/logotec.png" height="30" width="30">
             Tecnológico Nacional de México 
@@ -65,26 +68,13 @@
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Menu de Navegacion">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-
-
-        <div class="collapse navbar-collapse" id="navbar">
-            <ul class="navbar-nav mr-auto">
-            </ul>
-
-            <div class="collapse navbar-collapse" id="navbar">
-                <ul class="navbar-nav mr-auto">
-
-                </ul>
-
-                <!--       <button class="btn  navbar-toggler-icon my-s my-sm-0 mr-2" type="submit"></button>            -->
-
-                <a href="Registrarse.html" type="submit" class="btn btn-success">Registrarse</a>
-            </div>
-
-        </div>
-    </nav>
-
-
+			
+			<div class="collapse navbar-collapse" id="navbar">
+				<ul class="navbar-nav mr-auto">
+				</ul>
+				<button class="btn  navbar-toggler-icon my-s my-sm-0 mr-2" type="submit"></button>
+			</div>  
+	</nav>
 
 
     <section class="container-fluid bg">
@@ -105,9 +95,14 @@
                 <a href="#" data-toggle="modal" data-target="#fm-modal">¿Olvidaste tu contraseña?</a><br>
               </div>
             
+             <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="recordar">
+                <label class="form-check-label" for="recordar">Recordar contraseña</label> 
+                  </div>
+              <button type="button" class="btn btn-primary btn-block" id="btn-inicio">Iniciar sesión</button>
             
             
-            
+              
             <div class="modal fade" id="fm-modal" tabindex="-1" role="dialog" aria-labelledby="fm-modal" aria-hidden="true">
                   <div class="modal-dialog">
                     <div class="modal-content">
@@ -136,23 +131,15 @@
                             </div>
                         </div>
                     </div>
-                  </div> 
+                
+      
             
-            
-            
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="recordar">
-                <label class="form-check-label" for="recordar">Recordar contraseña</label> 
-                  </div>
-              <button type="button" class="btn btn-primary btn-block" id="btn-inicio">Iniciar sesión</button>
+             
             </form>
             
         </section>
         </section>
     </section>
-
-
-
 
 
 
@@ -175,9 +162,7 @@
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-</body>
-    
-</html>
+
 
     <script type="text/javascript" src="../datos/recuperaLogic/js/recupera.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>

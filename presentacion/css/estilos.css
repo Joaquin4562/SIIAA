@@ -4,6 +4,7 @@ footer{
     margin: auto;
     overflow: hidden;
 }
+
 .contenedor-footer{
     display: flex;
     width: 50%;
@@ -12,9 +13,11 @@ footer{
     padding-bottom: 5px;
     border-bottom: 1px solid green;
 }
+
 .content-foo{
     text-align: center;
 }
+
 .content-foo h4{
     color: #fff;
     border-bottom: 1px solid rgb(0, 173, 43);;
@@ -24,8 +27,6 @@ footer{
 .content-foo p{
     color: #ccc;
 }
-
-
 
 .titulo-final{
     text-align: center;
