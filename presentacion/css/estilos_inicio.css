@@ -166,5 +166,17 @@ main .barra-lateral-izquierda nav a i {
 }
 /*FIN*/
 
+/*ESTILOS menu_RH.html*/
+.btn-RH{
+	background-color: #099efc;
+	border-color: #099efc;
+	height: 60px;
+	width: 200px;
+}
+.btn-RH:hover{
+	background-color: #66bcf1;
+	border-color: #66bcf1;
+}
+/*FIN*/
 
 
