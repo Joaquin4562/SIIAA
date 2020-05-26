@@ -65,3 +65,24 @@ footer{
 	font-weight: bold;
 	color: #099efc;
 }
+
+
+
+/*ESTILOS BARRA DERECHA*/
+.contenedor-notas {
+margin-bottom: 10px;
+background: rgb(40 167 69);
+color: #fff;
+}
+
+.contenedor-notas div {
+background: rgb(40 167 69);
+padding: 10px;
+}
+
+
+
+
+
+
+
