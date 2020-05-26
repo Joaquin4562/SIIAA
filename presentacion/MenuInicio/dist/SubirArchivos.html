@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Sidenav Light - SB Admin</title>
+        <title>Subir archivos</title>
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/global.css">
@@ -236,10 +236,61 @@
                 <label class="ml-5">Maestria</label>
                 </div>
                 <div class="row flex-row-reverse mr-5">
-                    <button class="btn btn-outline-success" data-target="#fm-modal" id="btn-registrarse">Subir archivo</button>
+                    <button class="btn btn-outline-success" id="btn-registrarse" href="#" data-toggle="modal" data-target="#fm-modal">Subir archivo</button>
                     </div>
                 </div>
                 <hr class="ml-5 mr-5">
+                         
+                         
+                         
+<!--                         Ventana modal de subir archivos-->
+                <div class="modal fade" id="fm-modal" tabindex="-1" role="dialog" aria-labelledby="fm-modal" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      
+                        <div class="modal-header">
+                        <h2 class="modal-title" id="">Subir archivos</h2>
+                          <button class="close" data-dismiss="modal" aria-label="Cerrar">
+                          <span aria-hidden="true">&times;</span>
+                          </button>
+                                </div>
+                                <form name='frmRecupera' id="frmRecupera" class="frmRecupera" method="" action="#" onsubmit="return form_clic(frmRecupera)">
+                                    <div class="modal-body">
+                                        
+                                        
+                                    <form method="post" action="" enctype="multipart/form-data">
+                                    <input type="file" name="archivo"/>
+				                    </form> 
+                                        
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                        <button class="btn btn-outline-success" data-dismiss="modal">Subir archivo</button>
+                                    </div>
+                                    
+                                    
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                         
+                         
+                                     
+<!--             modal carga-->
+             <div class="modal" id="fn-modal" tabindex="-1" role="dialog" aria-labelledby="fn-modal" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content ">       
+                        <div class="pre-loader">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                         
+                         
                          
 			</div>
 
@@ -248,6 +299,9 @@
 			<!-- BARRA LATERAL DERECHA -->
 			<div class="col-3 barra-lateral-derecha d-none d-lg-block ml-2 mr-2">
                 <h5 class="mt-4">Calendario</h5>
+                
+
+                
 				</div>       
 			</div>
             </div>
