@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Recursos Humanos</title>
+        <title>Registrar Empleado</title>
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/global.css">
@@ -14,9 +14,6 @@
         <link rel="stylesheet" href="css/estilos_carga.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
     </head>
-    
-    
-    
     
     <body class="sb-nav-fixed">
         
@@ -95,8 +92,8 @@
                             
                             
                             <div class="sb-sidenav-menu-heading">RH</div>
-                            <a class="nav-link" href="RecursosHumanos.html"
-                                ><div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                            <a class="nav-link active" href="RecursosHumanos.html"
+                                ><div class="sb-nav-link-icon"><i class=" fas fa-chart-area"></i></div>
                                 Recursos Humanos</a>
                         </div>
                         
@@ -109,45 +106,92 @@
             
             
             <div id="layoutSidenav_content">
-                
                 <main>
                    <div class="col-12">
-                        
 		              <div class="row">
 			   <!-- CONTENIDO ENCUESTAS -->
 			         <div class="col contenido-principal mt-3">
                         <div class="col-12">
-                            <h1 class="mt-4">Recursos Humanos</h1>
+                            <h1 class="mt-4">Registrar Empleado</h1>
                         <hr>
                             
                             
-                              <div class="col contenido-principal mt-4 rounded">
-                    <div class="col">
-                        <div class=" ">
-                        </div>                        
-                            <div class="row justify-content-center">
-                                <div class="col-4 col-sm-10 col-md-12">
-                                    <div class="row justify-content-center mt-2">
-                                        <a class="btn mr-2 mb-2 btn-RH" id="botonRegistrarE" href="RegistrarEmpleado.html">Registrar empleado</a>
-                                        <a class="btn  mr-2 mb-2 btn-RH" data-target="#fm-modal" id="btn-registrar-empleado" href="RegistrarPorToken.html">Registrar por token</a>
-                                        <button class="btn mr-2 mb-2 btn-RH" data-target="#fm-modal" id="btn-registrar-empleado">Agendar encuesta</button>
-                                    </div>
-                                    <div class="row justify-content-center mt-2">
-                                        <button class="btn mr-2 mb-2 btn-RH" data-target="#fm-modal" id="btn-registrar-empleado">Reportes</button>
-                                        <button class="btn mr-2 mb-2 btn-RH" data-target="#fm-modal" id="btn-registrar-empleado">Cumpleaños por mes</button>
-                                        <button class="btn mr-2 mb-2 btn-RH" data-target="#fm-modal" id="btn-registrar-empleado">Avisos</button>
-                                    </div>
-                                    <div class="row justify-content-center mt-2">
-                                        <button class="btn mr-2 mb-2 btn-RH" data-target="#fm-modal" id="btn-registrar-empleado">Personal</button>
-                                    </div>
-                                </div>
+                                             <!-- Registro de uusarios RH -->
+                <div class="col contenido-principal rounded">
+                        <form class="row">
+                        <div class="col-md-6 mt-1">
+                            <div class="mt-4">
+                                <h6 class="subtitle border-bottom">Información básica</h6>
                             </div>
+                            <label>Nombre(s):<span class="spa">*</span></label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                            <label class="mt-3">Apellido paterno:<span class="spa">*</span></label>
+                            <input type="text" class="form-control mt-" id="apellidopaterno"
+                                placeholder="Ingrese su apellido paterno">
+                            <label class="mt-3">Apellido materno:<span class="spa">*</span></label>
+                            <input type="text" class="form-control" id="apellidomaterno"
+                                placeholder="Ingrese su apellido materno">
+                            <label class="mt-3">Fecha de nacimiento:<span class="spa">*</span></label>
+                            <input type="date" class="form-control" id="fechaNacimiento"
+                                placeholder="Ingrese la fecha de nacimiento">
+                            <label class="mt-3">Genero:<span class="spa">*</span></label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                </div>
+                                <select class="custom-select" id="genero">
+                                    <option selected>Selecciona un genero...</option>
+                                    <option value="1">Masculino</option>
+                                    <option value="2">Femenino</option>
+                                    <option value="3">Otro</option>
+                                </select>
+                            </div>
+                            <label class="mt-1">Estado:<span class="spa">*</span></label>
+                            <input type="text" class="form-control" id="estado" placeholder="Ingrese su estado">
+                            <label class="mt-3">Ciudad:<span class="spa">*</span></label>
+                            <input type="text" class="form-control" id="ciudad" placeholder="Ingrese su ciudad">
+                            <label class="mt-3">Codigo Postal:<span class="spa">*</span></label>
+                            <input type="text" class="form-control" id="codigoPostal" placeholder="Ingrese su ciudad">
+                        </div>
+                        <div class="col-md-6 mt-1">
+                            <div class="mt-4">
+                                <h6 class="subtitle border-bottom">Información de contacto</h6>
+                            </div>  
+                            <label>Colonia:<span class="spa">*</span></label>
+                            <input type="text" class="form-control" id="colonia" placeholder="Ingrese su colonia">
+                            <label class="mt-3">Calle:<span class="spa">*</span></label>
+                            <input type="text" class="form-control mt-" id="calle" placeholder="Ingrese su calle">
+                            <label class="mt-3">Número exterior:<span class="spa">*</span></label>
+                            <input type="text" class="form-control" id="numExterior"
+                                placeholder="Ingrese su número exterior">
+                            <label class="mt-3">Número interior:<span class="spa-no">*</span></label>
+                            <input type="text" class="form-control" id="numInterior"
+                                placeholder="Ingrese su número interior">
+                            <label class="mt-3">Correo electrónico:<span class="spa">*</span></label>
+                            <input type="text" class="form-control" id="correo"
+                                placeholder="Ingrese su coreo electrónico">
+                            <label class="mt-3">Número de celular:<span class="spa">*</span></label>
+                            <input type="text" class="form-control" id="numCelular"
+                                placeholder="Ingrese su número de celular">
+                            <label class="mt-3">Número de control:<span class="spa">*</span></label>
+                            <input type="text" class="form-control mb-3" id="numControl"
+                                placeholder="Ingrese su número de control">
+                        </div>
+                        </form>
+                        <div class="row flex-row-reverse mr-1 mb-3">
+                            <button class="btn btn-success" data-target="#fm-modal"
+                                id="btn-registrar">Registrar</button>
+                        </div>
                     </div>
-                </div>
+                            
+                            
+                            
+                            
                             
                             
                             </div>
                          </div>
+                          
+                          
                           
                           <!-- BARRA LATERAL DERECHA -->
 			                 <div class="col-3 d-none d-lg-block">
@@ -197,5 +241,4 @@
         <script src="assets/demo/chart-pie-demo.js"></script>
     </body>
 </html>
-
 

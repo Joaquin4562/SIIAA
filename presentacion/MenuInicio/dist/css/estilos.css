@@ -120,4 +120,29 @@ padding: 20px;
 
 
 
+/*BOTONES ADMIN Recursos Humanos*/
+.btn-RH{
+	background-color: #099efc;
+	border-color: #099efc;
+	height: 120px;
+    font-size: 20px;
+    font-weight: bold;
+    color: aliceblue;
+	width: 250px;
+    box-shadow: 0px 0px 5px rgb(88, 88, 88);
+     line-height: 100px;
+    border-radius: 10px;
+    
+}
+
+.btn-RH:hover{
+	background-color: #66bcf1;
+	border-color: #66bcf1;
+    color:white;
+}
+
+
+
+
+
 

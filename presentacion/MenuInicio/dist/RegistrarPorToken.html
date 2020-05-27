@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Recursos Humanos</title>
+        <title>Registrar Empleado</title>
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/global.css">
@@ -14,9 +14,6 @@
         <link rel="stylesheet" href="css/estilos_carga.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
     </head>
-    
-    
-    
     
     <body class="sb-nav-fixed">
         
@@ -95,7 +92,7 @@
                             
                             
                             <div class="sb-sidenav-menu-heading">RH</div>
-                            <a class="nav-link" href="RecursosHumanos.html"
+                            <a class="nav-link active" href="RecursosHumanos.html"
                                 ><div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                                 Recursos Humanos</a>
                         </div>
@@ -109,45 +106,62 @@
             
             
             <div id="layoutSidenav_content">
-                
                 <main>
                    <div class="col-12">
-                        
 		              <div class="row">
 			   <!-- CONTENIDO ENCUESTAS -->
 			         <div class="col contenido-principal mt-3">
                         <div class="col-12">
-                            <h1 class="mt-4">Recursos Humanos</h1>
+                            <h1 class="mt-4">Registrar por Token</h1>
                         <hr>
                             
                             
-                              <div class="col contenido-principal mt-4 rounded">
-                    <div class="col">
-                        <div class=" ">
-                        </div>                        
-                            <div class="row justify-content-center">
-                                <div class="col-4 col-sm-10 col-md-12">
-                                    <div class="row justify-content-center mt-2">
-                                        <a class="btn mr-2 mb-2 btn-RH" id="botonRegistrarE" href="RegistrarEmpleado.html">Registrar empleado</a>
-                                        <a class="btn  mr-2 mb-2 btn-RH" data-target="#fm-modal" id="btn-registrar-empleado" href="RegistrarPorToken.html">Registrar por token</a>
-                                        <button class="btn mr-2 mb-2 btn-RH" data-target="#fm-modal" id="btn-registrar-empleado">Agendar encuesta</button>
+                
+                            
+                             <!-- Registro de uusarios RH -->
+                <div class="col contenido-principal rounded">
+                        <form class="row">
+                            <div class="col mt-2">
+                                <div class="mt-2">
+                                    <h6 class="subtitle border-bottom">Generar token</h6>
+                                </div>
+                                <label class="mt-3">Correo electrónico:<span class="spa">*</span></label>
+                                <input type="text" class="form-control" id="correo"
+                                    placeholder="Ingrese un coreo electrónico">
+                                <label class="mt-3">Area:<span class="spa">*</span></label>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
                                     </div>
-                                    <div class="row justify-content-center mt-2">
-                                        <button class="btn mr-2 mb-2 btn-RH" data-target="#fm-modal" id="btn-registrar-empleado">Reportes</button>
-                                        <button class="btn mr-2 mb-2 btn-RH" data-target="#fm-modal" id="btn-registrar-empleado">Cumpleaños por mes</button>
-                                        <button class="btn mr-2 mb-2 btn-RH" data-target="#fm-modal" id="btn-registrar-empleado">Avisos</button>
-                                    </div>
-                                    <div class="row justify-content-center mt-2">
-                                        <button class="btn mr-2 mb-2 btn-RH" data-target="#fm-modal" id="btn-registrar-empleado">Personal</button>
-                                    </div>
+                                    <select class="custom-select" id="tipoEmpleado">
+                                        <option selected>Selecciona un area...</option>
+                                        <option value="1">Docente</option>
+                                        <option value="2">Mantenimiento</option>
+                                        <option value="3">Intendente</option>
+                                        <option value="4">Administrativo</option>
+                                    </select>
                                 </div>
                             </div>
+                        </form>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" id="token"
+                                placeholder="ejemplo de token: jdw23fd0l1" aria-label=""
+                                aria-describedby="basic-addon1" readonly>
+                            <div class="input-group-prepend">
+                                <button class="btn btn-success" data-target="#fm-modal"
+                                    id="btn-registrarse">Generar</button>
+                            </div>
+                        </div>
+                        <div class="row flex-row-reverse mr-0 mb-3">
+                            <button class="btn btn-success" data-target="#fm-modal" id="btn-EnviarToken">Enviar</button>
+                        </div>
                     </div>
-                </div>
+                                
                             
                             
                             </div>
                          </div>
+                          
+                          
                           
                           <!-- BARRA LATERAL DERECHA -->
 			                 <div class="col-3 d-none d-lg-block">
@@ -197,5 +211,4 @@
         <script src="assets/demo/chart-pie-demo.js"></script>
     </body>
 </html>
-
 
