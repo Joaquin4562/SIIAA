@@ -126,18 +126,19 @@
                                     <h6 class="subtitle border-bottom">Generar token</h6>
                                 </div>
                                 <label class="mt-3">Correo electrónico:<span class="spa">*</span></label>
-                                <input type="text" class="form-control" id="correo"
+                                <input type="text" class="form-control" id="correo_token"
                                     placeholder="Ingrese un coreo electrónico">
                                 <label class="mt-3">Area:<span class="spa">*</span></label>
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
                                     </div>
-                                    <select class="custom-select" id="tipoEmpleado">
+                                    <select class="custom-select" id="tipoEmpleado_token">
                                         <option selected>Selecciona un area...</option>
-                                        <option value="1">Docente</option>
-                                        <option value="2">Mantenimiento</option>
-                                        <option value="3">Intendente</option>
-                                        <option value="4">Administrativo</option>
+                                        <option value="docente">Docente</option>
+                                        <option value="mantenimiento">Mantenimiento</option>
+                                        <option value="intendente">Intendente</option>
+                                        <option value="administrativo">Administrativo</option>
+                                        <option value="auxiliar">Auxiliar</option>
                                     </select>
                                 </div>
                             </div>
@@ -145,14 +146,11 @@
                         <div class="input-group mb-3">
                             <input type="text" class="form-control" id="token"
                                 placeholder="ejemplo de token: jdw23fd0l1" aria-label=""
-                                aria-describedby="basic-addon1" readonly>
+                                aria-describedby="basic-addon1" name="token-text">
                             <div class="input-group-prepend">
                                 <button class="btn btn-success" data-target="#fm-modal"
-                                    id="btn-registrarse">Generar</button>
+                                    id="btn-generar-envair">Generar/Enviar</button>
                             </div>
-                        </div>
-                        <div class="row flex-row-reverse mr-0 mb-3">
-                            <button class="btn btn-success" data-target="#fm-modal" id="btn-EnviarToken">Enviar</button>
                         </div>
                     </div>
                                 
@@ -207,6 +205,7 @@
         <script src="js/scripts.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
         <script src="assets/demo/chart-area-demo.js"></script>
+        <script type="text/javascript" src="/negocios/js/RH/Registro_por_token/generar_token.js"></script>
         <script src="assets/demo/chart-bar-demo.js"></script>
         <script src="assets/demo/chart-pie-demo.js"></script>
     </body>
