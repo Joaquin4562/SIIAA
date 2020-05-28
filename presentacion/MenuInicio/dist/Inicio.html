@@ -169,30 +169,69 @@
                           
                           
                           
-                          <div class="col-3 d-none d-lg-block">
-                              <div class="contenedor-notas d-flex justify-content-center">
-					           <div>Notas <span class="badge badge-light">10</span></div>
-				                </div>
+                         <!-- BARRA LATERAL DERECHA -->
+			<div class="col-3 d-none d-lg-block ">
+          
+                
+                
+<!--                NOTAS-->
+                <div class="contenedor-notas d-flex justify-content-center ">
+					   <div>Notas <span class="badge badge-light">3</span></div>
+                </div>
+                
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            
+                            <ul class="list-group">
+                                <a id="btn-abrirnotas" href="#" data-toggle="modal" data-target="#fm-modal" class="list-group-item">
+                                <p><small> 09:45 </small> Esta es la primera nota</p>
+                                </a>
                                 
-                              
-                              <button class="btn btn-outline-success" href="#" data-toggle="modal" data-target="#fm-modal" id="btn-registrarse">Agregar nota</button>
-
-                              
-				            </div>
-                          
-                          </div>
-                         </div>
+                                <a id="btn-abrirnotas" href="#" data-toggle="modal" data-target="#fm-modal" class="list-group-item">
+                                <p><small> 09:45 </small> Esta es la primera nota</p>
+                                </a>
+                                
+                                
+                                 <a id="btn-abrirnotas" href="#" data-toggle="modal" data-target="#fm-modal" class="list-group-item">
+                                <p><small> 09:45 </small> Esta es la primera nota</p>
+                                </a>
+                                
+                                
+                                <a href="#" class="list-group-item disabled">
+                                    
+                                </a>
+                                
+                                <a href="#" class="list-group-item disabled">
+                                    
+                                </a>
+                                
+                            </ul>
+                            
+                            
+                        </div>
+                        
+                        
+                    </div>
+                    
+                    <div class="flex-end row p-2">
+                        <div class="col "></div>
+                            <div>
+                                    <button class="mr-2 btn btn-outline-primary" id="btn-abrirnotas" href="#" data-toggle="modal" data-target="#fm-modal">Crear Nota</button>
+                            </div>
+                    </div>
                     
                     
-                                  
-<!--                         Ventana modal de subir archivos-->
+                    
+                                                      
+<!--                         Ventana modal nota-->
                 <div class="modal fade" id="fm-modal" tabindex="-1" role="dialog" aria-labelledby="fm-modal" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="cabecera-modal">
                                          <div>
                                           <div class="textbox">
-                                            <input type="text" placeholder="Excriba aquí el titulo">
+                                            <input type="text" placeholder="Escriba aquí el titulo">
                                             </div>
                                         
                                         </div>
@@ -206,11 +245,18 @@
                                         
                                     </div>
 
-                                    <div class="modal-footer">
-                                        <button class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                                        <button class="btn btn-outline-primary" data-dismiss="modal">Guardar nota</button>
-                                    </div>
                                     
+                                    <div class="d-flex bd-highlight mb-3">
+                                    <div class="mr-auto p-2 bd-highlight">
+                                        <button class="m btn btn-outline-danger disabled" id="btn-abrirnotas" href="#" data-toggle="modal">Eliminar</button>
+                                        </div>
+                                    <div class="p-2 bd-highlight">
+                                        <button class="btn btn-secondary " data-dismiss="modal">Cancelar</button>
+                                        </div>
+                                    <div class="p-2 bd-highlight">
+                                        <button class="btn btn-outline-primary " data-dismiss="modal">Guardar</button></div>
+                                    </div>
+                                     
                                     
                                 </form>
                             </div>
@@ -219,8 +265,17 @@
                          
                     
                     
-                    
-                    
+                </div>
+            </div>
+                          
+                          
+                          
+                          
+                          
+                          
+                          </div>
+                         </div>
+
                 </main>
                 
                 

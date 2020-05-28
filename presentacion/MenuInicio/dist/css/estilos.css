@@ -70,13 +70,12 @@ footer{
 
 /*ESTILOS BARRA DERECHA NOTAS*/
 .contenedor-notas {
-margin-bottom: 10px;
-background: rgb(40 167 69);
+background: rgb(0 123 255);
 color: #fff;
 }
 
 .contenedor-notas div {
-background: rgb(40 167 69);
+background: rgb(0 123 255);
 padding: 10px;
 }
 
@@ -87,6 +86,7 @@ padding: 10px;
   font-size: 20px;
   border-bottom: 1px solid #4caf50;
 }
+
 
 .textbox i{
   width: 26px;
@@ -120,15 +120,17 @@ padding: 20px;
 
 
 
+
+
 /*BOTONES ADMIN Recursos Humanos*/
 .btn-RH{
 	background-color: #099efc;
 	border-color: #099efc;
-	height: 120px;
+	height: 110px;
+    width: 200px;
     font-size: 20px;
     font-weight: bold;
     color: aliceblue;
-	width: 250px;
     box-shadow: 0px 0px 5px rgb(88, 88, 88);
      line-height: 100px;
     border-radius: 10px;
