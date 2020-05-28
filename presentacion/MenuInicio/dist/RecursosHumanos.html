@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="css/global.css">
         <link rel="stylesheet" href="css/estilos.css">
         <link rel="stylesheet" href="css/estilos_carga.css">
+        <link rel="stylesheet" href="css/jquery-ui.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
     </head>
     
@@ -148,14 +149,26 @@
                             
                             </div>
                          </div>
+                         
                           
                          <!-- BARRA LATERAL DERECHA -->
 			<div class="col-3 d-none d-lg-block ">
           
-                
-                
-<!--                NOTAS-->
-                <div class="contenedor-notas d-flex justify-content-center ">
+                <div>
+                   <h5 class="titulo-nombre">Calendario</h5>
+                   <input id="datepicker" type="text" class="form-control">
+                   
+                   <script src="js/jquery.js"></script>
+                   <script src="js/jquery-ui.min.js"></script>
+                   <script>
+                       $('#datepicker').datepicker();
+                   </script>
+
+                </div>
+         <br>
+         <br>
+            <!--NOTAS-->
+             <div class="contenedor-notas d-flex justify-content-center ">
 					   <div>Notas <span class="badge badge-light">3</span></div>
                 </div>
                 
@@ -200,11 +213,11 @@
                                     <button class="mr-2 btn btn-outline-primary" id="btn-abrirnotas" href="#" data-toggle="modal" data-target="#fm-modal">Crear Nota</button>
                             </div>
                     </div>
-                    
-                    
+                   
+                
                     
                                                       
-<!--                         Ventana modal nota-->
+<!-- Ventana modal nota-->
                 <div class="modal fade" id="fm-modal" tabindex="-1" role="dialog" aria-labelledby="fm-modal" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
