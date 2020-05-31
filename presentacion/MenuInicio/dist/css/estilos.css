@@ -70,8 +70,10 @@ footer{
 
 /*ESTILOS BARRA DERECHA NOTAS*/
 .contenedor-notas {
+margin-top: 20px;
 background: rgb(0 123 255);
 color: #fff;
+border-radius: 12px;
 }
 
 .contenedor-notas div {
@@ -129,6 +131,20 @@ padding: 20px;
 	height: 110px;
     width: 200px;
     font-size: 20px;
+    font-weight: bold;
+    color: aliceblue;
+    box-shadow: 0px 0px 5px rgb(88, 88, 88);
+     line-height: 100px;
+    border-radius: 10px;
+    
+}
+
+.btn-festivo{
+	background-color: #099efc;
+	border-color: #099efc;
+	height: 60px;
+    width: 100px;
+    font-size: 10px;
     font-weight: bold;
     color: aliceblue;
     box-shadow: 0px 0px 5px rgb(88, 88, 88);

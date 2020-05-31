@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Recursos Humanos</title>
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/estilos_carga.css">
+        <link rel="stylesheet" href="css/calendar.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
 
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Recursos Humanos</title>
-    <link href="css/styles.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/estilos_carga.css">
-    <link rel="stylesheet" href="css/jquery-ui.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
-</head>
+        <script type="text/javascript" src=".././../../negocios/js/shared/verificar_sesion/verificar_sesion.js"></script>
 
-
-
-
-<body class="sb-nav-fixed">
-
-    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-        <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
-        <a class="navbar-brand" href="index.html"><img src="/presentacion/img/logotec.png" height="30" width="30">Tecnológico Nacional de México</a>
-        <!-- Navbar Search-->
-        <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
-            <div class="input-group">
-            </div>
+    </head>
+    
+    
+    
+    
+    <body class="sb-nav-fixed">
+        
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
+            <a class="navbar-brand" href="index.html"><img src="/presentacion/img/logotec.png" height="30" width="30">Tecnológico Nacional de México</a>
+            <!-- Navbar Search-->
+            <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+                <div class="input-group">
+                  </div>
         </form>
         <!-- Navbar-->
         <ul class="navbar-nav ml-auto ml-md-0">
@@ -142,6 +144,115 @@
                                                 <div class="row justify-content-center mt-2">
                                                     <button class="btn mr-2 mb-2 btn-RH" data-target="#fm-modal" id="btn-registrar-empleado">Personal</button>
                                                 </div>
+
+                </div>
+                            
+                            
+                            </div>
+                         </div>
+                         
+                          
+                         <!-- BARRA LATERAL DERECHA -->
+			<div class="col-3 d-none d-lg-block ">
+          
+			<div class="root">
+                <div class="calendar" id="calendar">
+                
+        
+            </div>
+            <script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+            <script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js"></script>
+            <script  type="text/javascript" src="./js/calendar.js"></script>
+            <script type="text/javascript">
+                let calendar = new Calendar('calendar');
+                calendar.getElement().addEventListener('change', e => {
+                    console.log(calendar.value().format('LLL'));
+                });
+        
+            </script>
+         
+         <div class="row justify-content-center mt-2">
+            
+            <div>
+            <button class="btn btn-success mb-1">
+                Dias Festivos <span class="badge badge-light">2</span>
+            </button>
+            <button class="btn btn-danger mb-1">
+                Cumpleaños<span class="badge badge-light">10</span>
+            </button>
+        </div>
+
+        <div>
+            <button class="btn btn-primary mb-1">
+                Encuesta <span class="badge badge-light">1</span>
+            </button>
+            <button class="btn btn-secondary mb-1">
+                Eventos <span class="badge badge-light">1</span>
+            </button>
+        </div>
+
+        </div>
+        </div>
+
+            <!--NOTAS-->
+             <div class="contenedor-notas d-flex justify-content-center ">
+					   <div>Notas <span class="badge badge-light">3</span></div>
+                </div>
+                
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            
+                            <ul class="list-group">
+                                <a id="btn-abrirnotas" href="#" data-toggle="modal" data-target="#fm-modal" class="list-group-item">
+                                <p><small> 09:45 </small> Esta es la primera nota</p>
+                                </a>
+                                
+                                <a id="btn-abrirnotas" href="#" data-toggle="modal" data-target="#fm-modal" class="list-group-item">
+                                <p><small> 09:45 </small> Esta es la primera nota</p>
+                                </a>
+                                
+                                
+                                 <a id="btn-abrirnotas" href="#" data-toggle="modal" data-target="#fm-modal" class="list-group-item">
+                                <p><small> 09:45 </small> Esta es la primera nota</p>
+                                </a>
+                                
+                                
+                                <a href="#" class="list-group-item disabled">
+                                    
+                                </a>
+                                
+                                <a href="#" class="list-group-item disabled">
+                                    
+                                </a>
+                                
+                            </ul>
+                            
+                            
+                        </div>
+                        
+                        
+                    </div>
+                   
+                    <div class="flex-end row p-2">
+                        <div class="col "></div>
+                            <div>
+                                    <button class="mr-2 btn btn-outline-primary" id="btn-abrirnotas" href="#" data-toggle="modal" data-target="#fm-modal">Crear Nota</button>
+                            </div>
+                       
+                    </div>
+                   
+                
+                    
+                                                      
+<!-- Ventana modal nota-->
+                <div class="modal fade" id="fm-modal" tabindex="-1" role="dialog" aria-labelledby="fm-modal" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="cabecera-modal">
+                                         <div>
+                                          <div class="textbox">
+                                            <input type="text" placeholder="Escriba aquí el titulo">
                                             </div>
                                         </div>
                                     </div>
