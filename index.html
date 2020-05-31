@@ -17,66 +17,7 @@
         }
     </style>
 
-    <script type="text/javascript">
-        if (localStorage.getItem('sesion')) {
-            if (localStorage.getItem('sesion') == 'true') {
-                var datosUsuario;
-                datosUsuario = JSON.parse(localStorage.getItem('datos'));
-
-                // TODO: AGREGAR DIRECCIÓN DE LA PÁGINA PRINCIPAL
-                switch (datosUsuario.idAreas) {
-                    case '1':
-                    location.href = '/presentacion/MenuInicio/Inicio.html';
-                        break;
-                    case '2':
-                    location.href = '/presentacion/MenuInicio/Inicio.html';
-                        break;
-                    case '3':
-                    location.href = '/presentacion/MenuInicio/Inicio.html';
-                        break;
-                    case '4':
-                    location.href = '/presentacion/MenuInicio/Inicio.html';
-                        break;
-                    case '5':
-                    location.href = '/presentacion/MenuInicio/Inicio.html';
-                        break;
-                    default:
-                        break;
-                }
-                // alert('Hola, ' + datosUsuario.nombres);
-                //location.href = '/presentacion/Inicio.html';
-            }
-        } else if (sessionStorage.getItem('sesion')) {
-            if (sessionStorage.getItem('sesion') == 'true') {
-                var datosUsuario;
-                datosUsuario = JSON.parse(sessionStorage.getItem('datos'));
-
-                // TODO: AGREGAR DIRECCIÓN DE LA PÁGINA PRINCIPAL
-                switch (datosUsuario.idAreas) {
-                    case '1':
-                    location.href = '/presentacion/MenuInicio/Inicio.html';
-                        break;
-                    case '2':
-                    location.href = '/presentacion/MenuInicio/Inicio.html';
-                        break;
-                    case '3':
-                    location.href = '/presentacion/MenuInicio/Inicio.html';
-                        break;
-                    case '4':
-                    location.href = '/presentacion/MenuInicio/Inicio.html';
-                        break;
-                    case '5':
-                    location.href = '/presentacion/MenuInicio/Inicio.html';
-                        break;
-                    default:
-                    alert('No se ha designado un tipo de empleado, revisar con RH');
-                        break;
-                }
-                // alert('Hola, ' + datosUsuario.nombres);
-                //location.href = '/presentacion/Inicio.html';
-            }
-        }
-    </script>
+    <script type="text/javascript" src="../negocios/js/shared/verificar_sesion/verificar_sesion_activa.js"></script>
 
 </head>
     
