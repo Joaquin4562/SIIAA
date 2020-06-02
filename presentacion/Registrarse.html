@@ -1,209 +1,169 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Navbar</title>
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <title>Navbar</title>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css">
-         <link rel="stylesheet" href="css/estilos_carga.css">
+    <link rel="stylesheet" href="css/estilos_carga.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="js/script.js"></script>
-    
-	<style>
-		body {
-			padding-top: 60px;
-			/*padding-bottom: 100px;*/
-		}
-    </style>
-    
-    <script type="text/javascript" src="../negocios/js/shared/verificar_sesion/verificar_sesion_activa.js"></script>
-    
-</head>
-    
-<body>
-    
-    
-<!--estilos:	navbar navbar-expand-lg navbar-light bg-light-->
-<!--            navbar navbar-expand-lg navbar-dark bg-dark -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-			<a href="#" class="navbar-brand">
-            <img src="img/logotec.png" height="30" width="30">
-            Tecnológico Nacional de México 
-            </a>
-        
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Menu de Navegacion">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			
-			<div class="collapse navbar-collapse" id="navbar">
-				<ul class="navbar-nav mr-auto">
-				</ul>
-				<button class="btn  navbar-toggler-icon my-s my-sm-0 mr-2" type="submit"></button>
-			</div>  
-	</nav>
-    
-    
     <style>
-        .spa{
+        body {
+            padding-top: 60px;
+        }
+    </style>
+    <script type="text/javascript" src="../negocios/js/shared/verificar_sesion/verificar_sesion_activa.js"></script>
+</head>
+
+<body>
+    <!--estilos:	navbar navbar-expand-lg navbar-light bg-light-->
+    <!--            navbar navbar-expand-lg navbar-dark bg-dark -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a href="#" class="navbar-brand">
+            <img src="img/logotec.png" height="30" width="30">
+            Tecnológico Nacional de México
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
+            aria-expanded="false" aria-label="Menu de Navegacion">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <button class="btn  navbar-toggler-icon my-s my-sm-0 mr-2" type="submit"></button>
+        </div>
+    </nav>
+    <style>
+        .spa {
             color: red;
         }
     </style>
-    
-    
     <section>
-    <div class="container">
-    <div class="row mt-3">
-        <div class="col-12">
-            <h2>Ingrese los datos</h2>
-            <hr>
-              
-            <form class="form-group row justify-content-center mt-5">
-                
-                <div class="col-md-4 col-sm-12">
-                    <label>Nombre:<span class="spa">*</span></label>
-                <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
-                    <label class="mt-3">Apellido paterno:<span class="spa">*</span></label>
-                <input type="text" class="form-control mt-" id="apellidopaterno" placeholder="Ingrese su apellido paterno">
-                    <label class="mt-3">Apellido materno:<span class="spa">*</span></label>
-                <input type="text" class="form-control" id="apellidomaterno" placeholder="Ingrese su apellido materno">
-                    <label class="mt-3">Fecha de nacimiento:<span class="spa">*</span></label>
-                <input type="date" class="form-control" id="fechanacimiento" placeholder="Ingrese la fecha de nacimiento">
-                    <label class="mt-3">Numero de celular:<span class="spa">*</span></label>
-                <input type="text" class="form-control" id="celular" placeholder="Ingrese su contraseña">
-                    <label class="mt-3">Código Postal:<span class="spa">*</span></label>
-                <input type="text" class="form-control" id="cp" placeholder="Ingrese su contraseña">
-                    <label class="mt-3">Ciudad:<span class="spa">*</span></label>
-                <input type="text" class="form-control" id="ciudad" placeholder="Ingrese su contraseña">
-                </div>
-                
-                
-                
-                <div class="col-md-4 col-sm-12">
-                    <label>Estado:<span class="spa">*</span></label>
-                <input type="text" class="form-control" id="estado" placeholder="Ingrese el estado">
-                    <label class="mt-3">Municipio:<span class="spa">*</span></label>
-                <input type="text" class="form-control" id="municipio" placeholder="Ingrese el municipio">
-                 <label class="mt-3">Colonia:<span class="spa">*</span></label>
-                <input type="text" class="form-control" id="colonia" placeholder="Ingrese su colonia">
-                    <label class="mt-3">Calle:<span class="spa">*</span></label>
-                <input type="text" class="form-control" id="calle" placeholder="Ingrese la calle">
-                    <label class="mt-3">Nº Interior:</label>
-                <input type="text" class="form-control" id="ninterior" placeholder="Ingrese el numero interior">
-                    <label class="mt-3">Nº Exterior:<span class="spa">*</span></label>
-                <input type="text" class="form-control" id="nexterior" placeholder="Ingrese su numero exterior">
-                    <label class="mt-3">Correo:<span class="spa">*</span></label>
-                <input type="email" class="form-control" id="correo" placeholder="Ingrese su correo">
-                             
-                </div>
-                </form>
-            
-            
-            <form class="form-group row justify-content-center mt-5">
-                <div class="col-md-4 col-sm-12">
-                <label>Contraseña:<span class="spa">*</span></label>
-                <input type="password" class="form-control" id="contrasena" placeholder="Ingrese una contraseña">
-                </div>
-                 <div class="col-md-4 col-sm-12">
-                <label>Confirmar contraseña:<span class="spa">*</span></label>
-                <input type="password" class="form-control" id="confirmarcontrasena" placeholder="confirme su contraseña">
-                </div>     
-            </form>
-            
-            
-        </div>
-        
-        </div>
-        <div class="row">
-            <div class="col">
-            <label> <span class="spa">*</span>Campos obligatorios</label>
-            </div>
-        <div class="row flex-row-reverse mr-5">
-        <button class="btn btn-success" data-target="#fm-modal" id="btn-registrarse">Registrarse</button>
-        </div>
-        </div>
-        
-        
-        
-        
-          <div class="modal fade" id="fm-modal" tabindex="-1" role="dialog" aria-labelledby="fm-modal" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      
-                        <div class="modal-header">
-                        <h2 class="modal-title" id="">Ingresar código</h2>
-                          <button class="close" data-dismiss="modal" aria-label="Cerrar">
-                          <span aria-hidden="true">&times;</span>
-                          </button>    
+        <div class="container">
+            <div class="row mt-3">
+                <div class="col-12">
+                    <h2>Ingrese los datos</h2>
+                    <hr>
+                    <form class="form-group row justify-content-center mt-5">
+                        <div class="col-md-4 col-sm-12">
+                            <label>Nombre:<span class="spa">*</span></label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                            <label class="mt-3">Apellido paterno:<span class="spa">*</span></label>
+                            <input type="text" class="form-control mt-" id="apellidopaterno"
+                                placeholder="Ingrese su apellido paterno">
+                            <label class="mt-3">Apellido materno:<span class="spa">*</span></label>
+                            <input type="text" class="form-control" id="apellidomaterno"
+                                placeholder="Ingrese su apellido materno">
+                            <label class="mt-3">Fecha de nacimiento:<span class="spa">*</span></label>
+                            <input type="date" class="form-control" id="fechanacimiento"
+                                placeholder="Ingrese la fecha de nacimiento">
+                            <label class="mt-3">Numero de celular:<span class="spa">*</span></label>
+                            <input type="text" class="form-control" id="celular" placeholder="Ingrese su contraseña">
+                            <label class="mt-3">Código Postal:<span class="spa">*</span></label>
+                            <input type="text" class="form-control" id="cp" placeholder="Ingrese su contraseña">
+                            <label class="mt-3">Ciudad:<span class="spa">*</span></label>
+                            <input type="text" class="form-control" id="ciudad" placeholder="Ingrese su contraseña">
                         </div>
-                        
+                        <div class="col-md-4 col-sm-12">
+                            <label>Estado:<span class="spa">*</span></label>
+                            <input type="text" class="form-control" id="estado" placeholder="Ingrese el estado">
+                            <label class="mt-3">Municipio:<span class="spa">*</span></label>
+                            <input type="text" class="form-control" id="municipio" placeholder="Ingrese el municipio">
+                            <label class="mt-3">Colonia:<span class="spa">*</span></label>
+                            <input type="text" class="form-control" id="colonia" placeholder="Ingrese su colonia">
+                            <label class="mt-3">Calle:<span class="spa">*</span></label>
+                            <input type="text" class="form-control" id="calle" placeholder="Ingrese la calle">
+                            <label class="mt-3">Nº Interior:</label>
+                            <input type="text" class="form-control" id="ninterior"
+                                placeholder="Ingrese el numero interior">
+                            <label class="mt-3">Nº Exterior:<span class="spa">*</span></label>
+                            <input type="text" class="form-control" id="nexterior"
+                                placeholder="Ingrese su numero exterior">
+                            <label class="mt-3">Correo:<span class="spa">*</span></label>
+                            <input type="email" class="form-control" id="correo" placeholder="Ingrese su correo">
+                        </div>
+                    </form>
+                    <form class="form-group row justify-content-center mt-5">
+                        <div class="col-md-4 col-sm-12">
+                            <label>Contraseña:<span class="spa">*</span></label>
+                            <input type="password" class="form-control" id="contrasena"
+                                placeholder="Ingrese una contraseña">
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <label>Confirmar contraseña:<span class="spa">*</span></label>
+                            <input type="password" class="form-control" id="confirmarcontrasena"
+                                placeholder="confirme su contraseña">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label> <span class="spa">*</span>Campos obligatorios</label>
+                </div>
+                <div class="row flex-row-reverse mr-5">
+                    <button class="btn btn-success" data-target="#fm-modal" id="btn-registrarse">Registrarse</button>
+                </div>
+            </div>
+            <div class="modal fade" id="fm-modal" tabindex="-1" role="dialog" aria-labelledby="fm-modal"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title" id="">Ingresar código</h2>
+                            <button class="close" data-dismiss="modal" aria-label="Cerrar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
                         <div class="modal-body">
                             <h5>Para registrarte ingresa el código</h5>
-                            <div class="form-group">    
+                            <div class="form-group">
                                 <label for="correo:">Código:</label>
                                 <input type="text" class="form-control" id="token" placeholder="Ingrese su código">
                                 <small id="código" class="form-text text-muted">Ejemplo del código: R4dwfeE6.</small>
                             </div>
                         </div>
-                        
                         <div class="modal-footer">
-                        <button class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                        <button class="btn btn-primary" id="btn-confirmar">Confirmar</button>
+                            <button class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                            <button class="btn btn-primary" id="btn-confirmar">Confirmar</button>
                         </div>
-                        
-                      </div>
                     </div>
-                  </div> 
-        
-        
-        
-        <!--             modal carga-->
-             <div class="modal" id="fn-modal" tabindex="-1" role="dialog" aria-labelledby="fn-modal" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content ">       
+                </div>
+            </div>
+            <!--modal carga-->
+            <div class="modal" id="fn-modal" tabindex="-1" role="dialog" aria-labelledby="fn-modal" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content ">
                         <div class="pre-loader">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                            </div>
-                            </div>
+                            <span></span>
+                            <span></span>
+                            <span></span>
                         </div>
                     </div>
-        
-        
-        <hr>
-    </div>
-   
+                </div>
+            </div>
+            <hr>
+        </div>
     </section>
-   
-    
-    
-    
-    
-  
-<footer class="page-footer py-2 text-xs-center mt-5">
+    <footer class="page-footer py-2 text-xs-center mt-5">
         <div class="contenedor-footer mt-2">
-            
             <div class="container content-foo">
-                <h5 class="titulo-final">Carretera Federal Libre Mante-Valles Km. 6.7, Cong Quintero, Tamaulipas; C.P.89930</h5>
+                <h5 class="titulo-final">Carretera Federal Libre Mante-Valles Km. 6.7, Cong Quintero, Tamaulipas;
+                    C.P.89930</h5>
                 <h5 class="titulo-final">TELS (831) 23 3 66 66 Y (831) 23 3 66 70, </h5>
                 <h5 class="titulo-final">e-mail: direccion@itsmante.edu.mx</h5>
                 <h5 class="titulo-final">www.itsmante.edu.mx</h5>
             </div>
-            
         </div>
     </footer>
- 
- 
-    
-   
-   
-   
-    <script type="text/javascript" src="/negocios/js/usuario/registrar/registrar_usuario.js"></script>
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../negocios/js/usuario/registrar/registrar_usuario.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
-    
-    
+
 </html>
