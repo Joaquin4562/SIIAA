@@ -7,7 +7,6 @@ if (localStorage.getItem("sesion")) {
         if (datosUsuario.idAreas != "2") {
             location.href =
                 "../../../../presentacion/MenuInicio/dist/Inicio.html";
-            break;
         }
     }
 } else if (sessionStorage.getItem("sesion")) {
@@ -19,7 +18,6 @@ if (localStorage.getItem("sesion")) {
         if (datosUsuario.idAreas != "2") {
             location.href =
                 "../../../../presentacion/MenuInicio/dist/Inicio.html";
-            break;
         }
     }
 }
