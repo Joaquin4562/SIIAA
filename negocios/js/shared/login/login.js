@@ -5,7 +5,8 @@ var btnInicio = document.getElementById("btn-inicio"),
 var correo, contrasena, datosUsuario;
 
 async function login() {
-    var peticion, params;
+    var peticion, 
+        params;
 
     params = "correo=" + correo + "&contrasena=" + contrasena;
 
@@ -20,17 +21,17 @@ async function login() {
     );
 
     peticion.onload = function () {
-        $("#fn-modal").modal("hide");
+        $("#fn-modal").modal('hide');
         var response;
         response = JSON.parse(peticion.responseText);
 
         if (response.error) {
             switch (response.error) {
                 case "Password":
-                    alert("Contraseña incorrecta");
+                    alert('Contraseña incorrecta');
                     break;
                 case "Account":
-                    alert("No se encontró tu cuenta");
+                    alert('No se encontró tu cuenta');
                 default:
                     break;
             }
@@ -43,6 +44,17 @@ async function login() {
 
         // TODO: AGREGAR DIRECCIÓN DE LA PÁGINA PRINCIPAL
 
+        switch (response.idAreas) {
+            case '1':
+                
+                break;
+            case '2':
+                
+                break;
+            default:
+
+                break;
+        }
         location.href = "../../../../presentacion/MenuInicio/dist/Inicio.html";
     };
 
@@ -55,12 +67,13 @@ async function login() {
 }
 
 function obtenerDatos(ev) {
-    (correo = document.getElementById("correo").value),
-        (contrasena = document.getElementById("contrasena").value);
 
+    correo = document.getElementById("correo").value,
+    contrasena = document.getElementById("contrasena").value;
+    
     correo = correo.trim();
     contrasena = contrasena.trim();
-
+    
     if (validarCampos()) {
         alert("Llene todos los campos");
         return;
@@ -70,7 +83,7 @@ function obtenerDatos(ev) {
         return;
     }
 
-    $("#fn-modal").modal("show");
+    $('#fn-modal').modal('show');
 
     login();
 }
@@ -94,12 +107,12 @@ function guardarSesion() {
 
     recordar = cbRecordar.checked;
     if (recordar == true) {
-        localStorage.setItem("sesion", "true");
-        localStorage.setItem("datos", datosUsuario);
+        localStorage.setItem('sesion', 'true');
+        localStorage.setItem('datos', datosUsuario);
         return;
     }
-    sessionStorage.setItem("sesion", "true");
-    sessionStorage.setItem("datos", datosUsuario);
+    sessionStorage.setItem('sesion', 'true');
+    sessionStorage.setItem('datos', datosUsuario);
 }
 
 btnInicio.addEventListener("click", obtenerDatos);
