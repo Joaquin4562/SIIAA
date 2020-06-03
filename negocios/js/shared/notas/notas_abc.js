@@ -112,7 +112,7 @@ function actualizarNota() {
         alert("Nota actualizada correctamente");
         $("#fm-modal").modal("hide");
 
-        location.href = "/presentacion/MenuInicio/dist/Inicio.html";
+        location.href = "../../../../presentacion/MenuInicio/dist/Inicio.html";
     };
 
     peticion.onreadystatechange = function() {
@@ -150,7 +150,7 @@ function registrarNota() {
         alert("Nota agregada correctamente");
         $("#fm-modal").modal("hide");
 
-        location.href = "/presentacion/MenuInicio/dist/Inicio.html";
+        location.href = "../../../../presentacion/MenuInicio/dist/Inicio.html";
     };
 
     peticion.onreadystatechange = function() {
@@ -188,7 +188,7 @@ function eliminarNota() {
             alert("Nota eliminada correctamente");
             $("#fm-modal").modal("hide");
 
-            location.href = "/presentacion/MenuInicio/dist/Inicio.html";
+            location.href = "../../../../presentacion/MenuInicio/dist/Inicio.html";
         };
 
         peticion.send(parametros);
