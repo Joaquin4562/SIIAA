@@ -1,0 +1,1686 @@
+{
+    "nombre_encuesta": "Clima laboral",
+    "bloques": [
+        {
+            "nombre-bloque": "Datos generales",
+            "puntos-totales": 0,
+            "preguntas": [
+                {
+                    "1": [
+                        {
+                            "pregunta": "Sexo",
+                            "respuestas": [
+                                {
+                                    "respuesta": "hombre",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "mujer",
+                                    "valor": 0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "2": [
+                        {
+                            "pregunta": "Edad",
+                            "respuestas": [
+                                {
+                                    "respuesta": "15-29",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "30-39",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "40-49",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "50-59",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "60 y mas",
+                                    "valor": 0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "3": [
+                        {
+                            "pregunta": "Estado civil o conyugal",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Soltera (o)",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Casada (o)",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Union libre",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Divorciada (o)",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Viuda (o)",
+                                    "valor": 0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "4": [
+                        {
+                            "pregunta": "Años de antiguedad en el centro de trabajo",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Menos de un año",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "De 4 a 9 años",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "De 1 a 3 años",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Mas de 10 años",
+                                    "valor": 0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "5": [
+                        {
+                            "pregunta": "Escolaridad",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Sin escolaridad",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Primaria",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Secundaria",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Bachillerato o prepa",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Licenciatura",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Maestria",
+                                    "valor": 0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "6": [
+                        {
+                            "pregunta": "Horario de trabajo",
+                            "respuestas": [
+                                {
+                                    "respuesta": "PENDIENTE",
+                                    "valor": 0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "7": [
+                        {
+                            "pregunta": "Tipo de plaza",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Base",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Horarios",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Confianza",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Especifique:",
+                                    "valor": 0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "8": [
+                        {
+                            "pregunta": "Tienes alguna discapacidad",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Si",
+                                    "valor": 0,
+                                    "discapacidades": [
+                                        {
+                                            "discapacidad": "motriz"
+                                        },
+                                        {
+                                            "discapacidad": "intelectual"
+                                        },
+                                        {
+                                            "discapacidad": "Auditiva"
+                                        },
+                                        {
+                                            "discapacidad": "Visual"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "respuesta": "No",
+                                    "valor": 0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "9": [
+                        {
+                            "pregunta": "Formas parte de alguno de los siguientes sectores de la población",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Si",
+                                    "valor": 0,
+                                    "sectores": [
+                                        {
+                                            "sector": "De la diversidad sexual"
+                                        },
+                                        {
+                                            "sector": "Indígenas"
+                                        },
+                                        {
+                                            "sector": "Afrodecendientes"
+                                        },
+                                        {
+                                            "sector": "Adultos mayores"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "respuesta": "No",
+                                    "valor": 0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "10": [
+                        {
+                            "pregunta": "En su centro de trabajo existe una política de igualdad laboral y no discriminación",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Si",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "No",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "No se",
+                                    "valor": 0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "11": [
+                        {
+                            "pregunta": "En su centro de trabajo existe un código de ética y/o conducta",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Si",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "No",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "No se",
+                                    "valor": 0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "12": [
+                        {
+                            "pregunta": "En su centro de trabajo existe un comité de igualdad y no discriminación",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Si",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "No",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "No se",
+                                    "valor": 0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "13": [
+                        {
+                            "pregunta": "En su centro de trabajo existe un mecanismo para prevenir, atender y sancionar las prácticas de discriminación y violencia laboral",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Sí",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "No",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "No se",
+                                    "valor": 0
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "nombre-bloque": "Recursamiento y selección de personal",
+            "puntos-totales": 12,
+            "preguntas": [
+                {
+                    "1": [
+                        {
+                            "pregunta": "Para su contratación fue más importante ser mujer u hombre que sus habilidades profesionales.",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Sí",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "NO",
+                                    "valor": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "2": [
+                        {
+                            "pregunta": "En su centro de trabajo el proceso de contratación favorece más a personas jóvenes.",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Sí",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "NO",
+                                    "valor": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "3": [
+                        {
+                            "pregunta": "En el momento de su contratación, su edad fue determinante.",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Sí",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "NO",
+                                    "valor": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "4": [
+                        {
+                            "pregunta": "Para su contratación fue determinante su apariencia física.",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Sí",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "NO",
+                                    "valor": 3
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "nombre-bloque": "Formación y capacitación",
+            "puntos-totales": 12,
+            "preguntas": [
+                {
+                    "1": [
+                        {
+                            "pregunta": "En su centro de trabajo las oportunidades de desarrollo laboral solo las reciben unas cuantas personas privilegiadas",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 3
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "2": [
+                        {
+                            "pregunta": "En su centro de trabajo mujeres y hombres tienen por igual oportunidades de ascenso y capacitación",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "3": [
+                        {
+                            "pregunta": "En su centro de trabajo se cuenta con programas de capacitación en materia de igualdad laboral y no discriminación.",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "4": [
+                        {
+                            "pregunta": "En los últimos 12 meses usted ha participado en programas de capacitación.",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 3
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "nombre-bloque": "Permanencia y acenso",
+            "puntos-totales": 18,
+            "preguntas": [
+                {
+                    "1": [
+                        {
+                            "pregunta": " En su centro de trabajo para lograr la contratación, una promoción o un ascenso cuentan más las recomendaciones que los conocimientos y capacidades de la persona",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 3
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "2": [
+                        {
+                            "pregunta": "En su centro de trabajo se ha despedido a alguna mujer por embarazo u orillado a renunciar al regresar de su licencia de maternidad",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 3
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "3": [
+                        {
+                            "pregunta": "En su centro de trabajo la competencia por mejores puestos, condiciones laborales o salariales es justa",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "4": [
+                        {
+                            "pregunta": "En su centro de trabajo mujeres y hombres tienen las mismas oportunidades para ocupar puestos de decisión",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "5": [
+                        {
+                            "pregunta": "En su centro de trabajo se cuenta con un sistema de evaluación de desempeño del personal",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "6": [
+                        {
+                            "pregunta": "En los últimos 12 meses han realizado una evaluación desempeño",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 3
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "nombre-bloque": "Corresponsabilidad en la vida laboral, familiar y personal",
+            "puntos-totales": 27,
+            "preguntas": [
+                {
+                    "1": [
+                        {
+                            "pregunta": "En su centro de trabajo tanto mujeres como hombres tienen las mismas facilidades para atender problemas familiares no previstos.",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "2": [
+                        {
+                            "pregunta": "En su centro de trabajo las mujeres embarazadas enfrentan un clima laboral hostil.",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 3
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "3": [
+                        {
+                            "pregunta": "En su centro de trabajo las personas o familiares que requieren cuidados enfrentan un clima laboral hostil.",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 3
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "4": [
+                        {
+                            "pregunta": "En su centro de trabajo los hombres cuentan licencia de paternidad por nacimiento o adopción de una hija(o).",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "5": [
+                        {
+                            "pregunta": "En su centro de trabajo la licencia de paternidad se otorga por más de cinco días",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "6": [
+                        {
+                            "pregunta": "En su centro de trabajo se otorgan permisos para atender situaciones familiares como cuidado de hijas e hijos, personas enfermas o personas adultas mayores",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "7": [
+                        {
+                            "pregunta": "En su centro de trabajo existen convenios con prestadores de servicios que contemplen beneficios para el personal tales como: lavanderías, comedores, planchadurias, transporte entre otros.",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "8": [
+                        {
+                            "pregunta": "En su centro de trabajo, si usted decidiera usar las opciones de trabajo flexibles ¿Se cuestionaría su compromiso ante su trabajo?",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 3
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "9": [
+                        {
+                            "pregunta": "En su centro de trabajo usted puede acercarse a su jefa (e) inmediata (o) para hablar sobre cuestiones relacionadas con horarios que le estén afectando.",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 3
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "nombre-bloque": "Clima laboral libre de violencia",
+            "puntos-totales": 42,
+            "preguntas": [
+                {
+                    "1": [
+                        {
+                            "pregunta": "Usted siente que se le trata con respeto en su trabajo actual.",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "2": [
+                        {
+                            "pregunta": "En su centro de trabajo quienes realizan tareas personales para y los jefes logran privilegios.",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 3
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "3": [
+                        {
+                            "pregunta": "En su centro de trabajo todas las personas que laboran obtienen un trato digno y decente",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "4": [
+                        {
+                            "pregunta": "En su centro de trabajo las valoraciones que se realizan a sus actividades dependen más de la calidad y responsabilidad que de cualquier otra cuestión personal",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "5": [
+                        {
+                            "pregunta": "En su centro de trabajo, en general hay personas que discriminan, tratan mal o le faltan al respeto a sus compañeras (os), colegas o subordinadas (os).",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 3
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "6": [
+                        {
+                            "pregunta": "En su centro de trabajo debido a sus características personales hay personas que sufren un trato inferior o de burla.",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 3
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "7": [
+                        {
+                            "pregunta": "En su centro de trabajo las y los superiores reciben un trato mucho más respetuoso que subordinados (as) y personal administrativo.",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 3
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "8": [
+                        {
+                            "pregunta": "En su centro de trabajo las y los superiores están abiertos a la comunicación con el personal.",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "9": [
+                        {
+                            "pregunta": "En su centro de trabajo se da un trato inferior o discriminatorio a las personas con los más bajos niveles de sueldo.",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 3
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "10": [
+                        {
+                            "pregunta": "En su centro de trabajo existen campañas de difusión internas de promoción de la igualdad laboral y no discriminación.",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "11": [
+                        {
+                            "pregunta": "En su centro de trabajo se toman acciones como: aislamiento de sus compañeras (os), cambio de lugar repentinamente, falta de instrucciones, menosprecio del esfuerzo o propuestas, imposición de tareas sin los medios para realizarles.",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 3
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "12": [
+                        {
+                            "pregunta": "En su centro de trabajo las funciones y tareas se transmiten de manera clara y precisa.",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "13": [
+                        {
+                            "pregunta": "En su centro de trabajo las cargas de trabajo se distribuyen de acuerdo a la responsabilidad del cargo.",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "14": [
+                        {
+                            "pregunta": "Si manifiesto mi preocupación sobre algún asunto relacionado con la igualdad de género o prácticas discriminatorias, se le da seguimiento.",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 3
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "nombre-bloque": "Acoso y hostigamiento",
+            "puntos-totales": 24,
+            "preguntas": [
+                {
+                    "1": [
+                        {
+                            "pregunta": "En su centro de trabajo ha recibido, comentarios sugestivos o sexistas, bromas ofensivas, miradas obscenas o petición de pláticas indeseables relacionadas con asuntos sexuales.",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Sí",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "No",
+                                    "valor": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "2": [
+                        {
+                            "pregunta": "En su centro de trabajo ha recibido proposiciones o peticiones directas o indirectas para establecer una relación sexual.",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Sí",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "No",
+                                    "valor": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "3": [
+                        {
+                            "pregunta": "En su centro de trabajo ha vivido contacto físico sexual no deseado.",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Sí",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "No",
+                                    "valor": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "4": [
+                        {
+                            "pregunta": "En su centro de trabajo se logran recompensas o incentivos laborales a cambio de favores sexuales.",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Sí",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "No",
+                                    "valor": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "5": [
+                        {
+                            "pregunta": "En su centro de trabajo se reciben amenazas con daños o castigos en caso de no acceder a proporcionar favores sexuales.",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Sí",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "No",
+                                    "valor": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "6": [
+                        {
+                            "pregunta": "En su centro de trabajo ha recibido represalias sin razón o amenazas con relación a su permanencia en el trabajo.",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Sí",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "No",
+                                    "valor": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "7": [
+                        {
+                            "pregunta": "En caso de que haya sido víctima de acoso u hostigamiento sexual, en su centro de trabajo resolvieron satisfactoriamente su caso al interior o le canalizaron con las autoridades competentes.",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Sí",
+                                    "valor": 3
+                                },
+                                {
+                                    "respuesta": "No",
+                                    "valor": 0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "8": [
+                        {
+                            "pregunta": "En caso de ser acosada (o) u hostigada (o) sexual o laboralmente en su centro de trabajo sabe a qué autoridad puede dirigirse para denunciarlo.",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Sí",
+                                    "valor": 3
+                                },
+                                {
+                                    "respuesta": "No",
+                                    "valor": 0
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "nombre-bloque": "Accesibilidad",
+            "puntos-totales": 15,
+            "preguntas": [
+                {
+                    "1": [
+                        {
+                            "pregunta": "En su centro de trabajo se cuenta con el espacio, mobiliario y equipo adecuado para personas con discapacidad.",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "2": [
+                        {
+                            "pregunta": "Considera que las instalaciones de su centro de trabajo son adecuadas y accesibles para personas con discapacidad (rampas, estacionamiento, sanitarios, oficinas, pasillos, escaleras, elevadores, entre otros).",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "3": [
+                        {
+                            "pregunta": "En su centro de trabajo se cuenta con los medios tecnológicos y de comunicación accesible para cualquier persona con discapacidad desempeñe sus actividades de manera óptima.",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "4": [
+                        {
+                            "pregunta": "En su centro de trabajo se contemplan mecanismos o políticas de inclusión laboral para personas con discapacidad, personas adultas mayores o con VIH, entre otras.",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "5": [
+                        {
+                            "pregunta": "En su centro de trabajo se utiliza lenguaje incluyente y no sexista.",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 3
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "nombre-bloque": "Accesibilidad II",
+            "puntos-totales": 6,
+            "preguntas": [
+                {
+                    "1": [
+                        {
+                            "pregunta": "En su centro de trabajo hay un ambiente de respeto y no discriminación hacia las diferentes preferencias sexuales.",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "2": [
+                        {
+                            "pregunta": "En su centro de trabajo ha sido testigo de actos discriminatorios por ser mujer u hombre, por edad, apariencia, discapacidad, entre otros.",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 3
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 0
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "nombre-bloque": "Accesibilidad III",
+            "puntos-totales": 12,
+            "preguntas": [
+                {
+                    "1": [
+                        {
+                            "pregunta": "En su centro de trabajo se proporcionan las prestaciones de ley.",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "2": [
+                        {
+                            "pregunta": "En su centro de trabajo las y los directivos apoyan la igualdad y no discriminación.",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "3": [
+                        {
+                            "pregunta": "En su centro de trabajo los mecanismos utilizados para asegurar la igualdad y no discriminación son eficaces.",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "4": [
+                        {
+                            "pregunta": "En su centro de trabajo se recibe salario igual por igual trabajo sin importar sexo, apariencia, edad u otras características personales.",
+                            "respuestas": [
+                                {
+                                    "respuesta": "Nunca",
+                                    "valor": 0
+                                },
+                                {
+                                    "respuesta": "Algunas veces",
+                                    "valor": 1
+                                },
+                                {
+                                    "respuesta": "Con frecuencia",
+                                    "valor": 2
+                                },
+                                {
+                                    "respuesta": "Siempre",
+                                    "valor": 3
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

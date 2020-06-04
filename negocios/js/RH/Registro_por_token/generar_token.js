@@ -35,10 +35,9 @@ function generarToken() {
                 alert(response.error);
                 return;
             }
-            alert(response.token);
             alert("Se envio el token correctmante");
             token.value = response.token;
-            $("#token-text").val(response.token);
+            $("#token-text").val('Su token es: '+response.token);
         };
 
         peticion.onreadystatechange = function () {
