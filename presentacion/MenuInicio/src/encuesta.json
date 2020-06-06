@@ -325,7 +325,7 @@
             ]
         },
         {
-            "nombre-bloque": "Recursamiento y selección de personal",
+            "nombre-bloque": "Recursamiento y seleción de personal",
             "puntos-totales": 12,
             "preguntas": [
                 {
@@ -505,7 +505,7 @@
             ]
         },
         {
-            "nombre-bloque": "Permanencia y acenso",
+            "nombre-bloque": "Permanencia y ascenso",
             "puntos-totales": 18,
             "preguntas": [
                 {
@@ -1390,7 +1390,7 @@
             ]
         },
         {
-            "nombre-bloque": "Accesibilidad",
+            "nombre-bloque": "Accesibilidad I",
             "puntos-totales": 15,
             "preguntas": [
                 {

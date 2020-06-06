@@ -159,8 +159,15 @@ padding: 20px;
     color:white;
 }
 
-
-
+/* estilos de encuestas */
+.pregunta{
+    font-size: 20px;
+    color: #099efc;
+}
+.center-encuestas {
+    height:400px;
+    overflow-y: scroll;
+}
 
 
 
