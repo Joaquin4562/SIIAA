@@ -7,12 +7,13 @@ var btn_b6 = document.getElementById("btn-b6");
 var btn_b7 = document.getElementById("btn-b7");
 var btn_b8 = document.getElementById("btn-b8");
 var btn_b9 = document.getElementById("btn-b9");
-var btn_guardar = document.getElementById("btn-guardar");
 var btn_b10 = document.getElementById("btn-b10");
+var btn_guardar = document.getElementById("btn-guardar");
+var barra_progreso = document.getElementById("barra-progreso");
 
 let formularios = [];
-var barra_progreso = document.getElementById("barra-progreso");
 function readTextFile(bloque) {
+    formularios = [];
     var file = 'http://127.0.0.1:5500/presentacion/MenuInicio/src/encuesta.json';
     var rawFile = new XMLHttpRequest();
     rawFile.overrideMimeType("application/json");
@@ -44,17 +45,17 @@ function readTextFile(bloque) {
                     var pregunta = document.getElementById("preguntas-" + index);
                     for (let j = 0; j < data["bloques"][index]["preguntas"].length; j++) {
                         formularios.push("form-" + data["bloques"][index]["preguntas"][j][j + 1][0]["pregunta"]);
-                        pregunta.innerHTML += '<form id = "form-' + data["bloques"][index]["preguntas"][j][j + 1][0]["pregunta"] + '"><label class="border-bottom pregunta">' + data["bloques"][index]["preguntas"][j][j + 1][0]["pregunta"] + '</label><br>'
+                        pregunta.innerHTML += '<form id = "form-' + data["bloques"][index]["preguntas"][j][j + 1][0]["pregunta"] + '"><label class="border-bottom pregunta">' + data["bloques"][index]["preguntas"][j][j + 1][0]["pregunta"] + '</label><br></form>'
                         for (let k = 0; k < data["bloques"][index]["preguntas"][j][j + 1][0]["respuestas"].length; k++) {
-                            console.log(data["bloques"][index]["preguntas"][j][j + 1][0]["respuestas"][k]);
                             let respuesta = data["bloques"][index]["preguntas"][j][j + 1][0]["respuestas"][k]["respuesta"];
-                            pregunta.innerHTML += '<div class="form-check ">'
+                            let valorRespuesa = data["bloques"][index]["preguntas"][j][j + 1][0]["respuestas"][k]["valor"];
+                            let form = document.getElementById("form-" + data["bloques"][index]["preguntas"][j][j + 1][0]["pregunta"]);
+                            form.innerHTML += '<div class="form-check ">'
                                 + '<label class="form-check-label">'
-                                + '<input type="radio" class="form-check-input" name = "' + data["bloques"][index]["preguntas"][j][j + 1][0]["pregunta"] + '">'
+                                + '<input type="radio" class="form-check-input" value = "' + valorRespuesa + '" name = "' + data["bloques"][index]["preguntas"][j][j + 1][0]["pregunta"] + '">'
                                 + respuesta
                                 + '</label>'
-                                + '</div>'
-                                + '</form>';
+                                + '</div>';
                         }
                     }
                 }
@@ -63,22 +64,48 @@ function readTextFile(bloque) {
     }
     rawFile.send();
 }
-
+//para que al cargar la pagina muestre el formulario de datos generales primero
 readTextFile("Datos generales");
 let progreso = 0;
+
 function verificarRespuestas() {
     for (const key in formularios) {
         elementos = document.getElementById(formularios[key]).elements;
-        alert(elementos);
-        longitud =elementos.length;
+        let longitud = elementos.length;
+        for (var i = 0; i < longitud; i++) {
+            if (elementos[i].type == "radio" && elementos[i].checked == true) {
+                //VALORES DE LAS RESPUESTAS
+                alert(elementos[i].value);
+            }
+        }
     }
 }
+
+function validarDatos() {
+    //TODO: VALIDAR SI TODOS LOS CHECKS ESTAN SELECCIONADOS}
+    for (const key in formularios) {
+        elementos = document.getElementById(formularios[key]).elements;
+        let longitud = elementos.length;
+        for (var i = 0; i < longitud; i++) {
+            if (!elementos[i].type == "radio" && elementos[i].checked == true) {
+                return false;
+            }
+            return true;
+        }
+    }
+}
+//aumentar el progreso
 function progress(ev) {
-    progreso += 10;
-    barra_progreso.style.width = progreso + "%";
-    barra_progreso.textContent = progreso + "%";
-    barra_progreso.setAttribute("aria-valuenow", progreso);
-    verificarRespuestas();
+    if (validarDatos() == true) {
+        progreso += 10;
+        barra_progreso.style.width = progreso + "%";
+        barra_progreso.textContent = progreso + "%";
+        barra_progreso.setAttribute("aria-valuenow", progreso);
+        verificarRespuestas();
+        alert("OK")
+    }else{
+        alert("Favor de contestar todas las preguntas del bloque")
+    }
 }
 
 btn_b1.addEventListener("click", function () { readTextFile("Datos generales") });
