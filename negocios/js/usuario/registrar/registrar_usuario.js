@@ -27,6 +27,11 @@ function registrar_usuario(ev) {
     token = document.getElementById("token").value;
     token = token.trim();
 
+    if (!validarToken(token)) {
+        alert('Ingrese un token válido');
+        return;
+    }
+
     params =
         "nombres=" +
         nombres +
@@ -84,7 +89,7 @@ function registrar_usuario(ev) {
         alert("Registro exitoso");
         $("#fm-modal").modal("hide");
 
-        location.href = "/presentacion/IniciarSesion.html";
+        location.href = "../../../../presentacion/IniciarSesion.html";
     };
 
     peticion.onreadystatechange = function () {
@@ -313,6 +318,13 @@ function validarContrasena() {
     }
     if (contrasena != confCont) {
         alert("Las contraseñas no coinciden");
+        return false;
+    }
+    return true;
+}
+
+function validarToken(token) {
+    if (token == "" || token == null) {
         return false;
     }
     return true;

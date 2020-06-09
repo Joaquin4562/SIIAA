@@ -57,6 +57,8 @@ function registrar_usuario(ev) {
         correo +
         "&contrasena=" +
         contrasena;
+
+        alert('hola' . nombres);
         
 
     peticion = new XMLHttpRequest();
