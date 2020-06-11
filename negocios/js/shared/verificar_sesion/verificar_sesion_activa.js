@@ -4,16 +4,7 @@ if (localStorage.getItem("sesion")) {
         datosUsuario = JSON.parse(localStorage.getItem("datos"));
 
         // TODO: AGREGAR DIRECCIÓN DE LA PÁGINA PRINCIPAL
-        switch (datosUsuario.idAreas) {
-            case "2":
-                location.href =
-                    "../../../../presentacion/MenuInicio/dist/RecursosHumanos.html";
-                break;
-            default:
-                location.href =
-                    "../../../../presentacion/MenuInicio/dist/Inicio.html";
-                break;
-        }
+        location.href = "../../../../presentacion/MenuInicio/dist/Inicio.html";
     }
 } else if (sessionStorage.getItem("sesion")) {
     if (sessionStorage.getItem("sesion") == "true") {
@@ -21,15 +12,6 @@ if (localStorage.getItem("sesion")) {
         datosUsuario = JSON.parse(sessionStorage.getItem("datos"));
 
         // TODO: AGREGAR DIRECCIÓN DE LA PÁGINA PRINCIPAL
-        switch (datosUsuario.idAreas) {
-            case "2":
-                location.href =
-                    "../../../../presentacion/MenuInicio/dist/RecursosHumanos.html";
-                break;
-            default:
-                location.href =
-                    "../../../../presentacion/MenuInicio/dist/Inicio.html";
-                break;
-        }
+        location.href = "../../../../presentacion/MenuInicio/dist/Inicio.html";
     }
 }
