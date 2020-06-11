@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Recursos Humanos</title>
+    <title>Reportes</title>
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/global.css" />
@@ -122,51 +122,120 @@
             <main>
                 <div class="col-12">
                     <div class="row">
+
+
                         <!-- CONTENIDO ENCUESTAS -->
                         <div class="col contenido-principal mt-3">
                             <div class="col-12">
-                                <h4 class="mt-4">Recursos Humanos</h4>
+                                <h4 class="mt-4">Pendientes</h4>
                                 <hr />
-                                <div class="col contenido-principal mt-4 rounded">
-                                    <div class="col">
-                                        <div class=" "></div>
-                                        <div class="row justify-content-center">
-                                            <div class="col-4 col-sm-10 col-md-12">
-                                                <div class="row justify-content-center mt-2">
-                                                    <a class="btn mr-2 mb-2 btn-RH" id="botonRegistrarE"
-                                                        href="RegistrarEmpleado.html">Registrar
-                                                        empleado</a>
-                                                    <a class="btn mr-2 mb-2 btn-RH" data-target="#fm-modal"
-                                                        id="btn-registrar-empleado"
-                                                        href="RegistrarPorToken.html">Registrar por
-                                                        token</a>
-                                                        <a class="btn mr-2 mb-2 btn-RH" data-target="#fm-modal"
-                                                        id="btn-avisos"
-                                                        href="AgendarEncuestas.html">Agendar encuestas</a>
-                                                </div>
-                                                <div class="row justify-content-center mt-2">
-                                                    <a class="btn mr-2 mb-2 btn-RH" data-target="#fm-modal"
-                                                    id="btn-avisos"
-                                                    href="Reportes.html">Reportes</a>
-                                                    <a class="btn mr-2 mb-2 btn-RH" data-target="#fm-modal"
-                                                        id="btn-registrar-empleado"
-                                                        href="Cumplemes.html">Cumpleaños</a>
-                                                    <a class="btn mr-2 mb-2 btn-RH" data-target="#fm-modal"
-                                                    id="btn-avisos"
-                                                    href="Avisos.html">Avisos</a>
-                                                </div>
-                                                <div class="row justify-content-center mt-2">
-                                                    <button class="btn mr-2 mb-2 btn-RH" data-target="#fm-modal"
-                                                        id="btn-registrar-empleado">
-                                                        Personal
-                                                    </button>
-                                                </div>
+
+
+
+                                <!--  modal agendar encuesta-->
+                                <div class="modal fade" id="fn-modal" tabindex="-1" role="dialog"
+                                    aria-labelledby="fm-modal" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h2 class="modal-title" id="">Escribir aviso</h2>
+                                                <button class="close" data-dismiss="modal" aria-label="Cerrar">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
                                             </div>
+                                            <form name='frmRecupera' id="frmRecupera" class="frmRecupera" method=""
+                                                action="#" onsubmit="return form_clic(frmRecupera)">
+                                                <div class="modal-body">
+
+                                                    <div class="form-group">
+                                                        <label for="asunto">Asunto:</label>
+                                                        <input id="asunto" name="asunto" type="text"
+                                                            class="form-control" placeholder="Ingrese el asunto">
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="mensaje">Mensaje:</label>
+                                                        <textarea class="form-control" id="notaDescripcion" rows="3"
+                                                            placeholder="Escriba aquí el mensaje..."></textarea>
+                                                    </div>
+
+
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button class="btn btn-secondary"
+                                                        data-dismiss="modal">Cancelar</button>
+                                                    <button class="btn btn-primary" onclick="form_click()" type="submit"
+                                                        form="frmRecupera">Enviar avisos</button>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
+
+
+
+                                <div class="d-flex bd-highlight">
+                                    <div class="mr-auto p-2 bd-highlight">
+                                    </div>
+                                    <div class="p-1 bd-highlight">
+                                    </div>
+                                    <div class="p-1 bd-highlight">
+                                        <button class="btn btn-primary" type="submit" form="frmAvisos"
+                                            id="btn-abrirAvisos" href="#" data-toggle="modal" data-target="#fn-modal">
+                                            Escibir aviso
+                                        </button>
+                                    </div>
+                                </div>
+
+
+                                <table class="table table-primary table-sm table-bordered  mt-2">
+                                    <thead>
+                                        <tr>
+                                            <th>Nombre</th>
+                                            <th>Tipo de empleado</th>
+                                            <th>Enuesta pendiente</th>
+                                        </tr>
+                                    </thead>
+
+
+                                    <tr class="table">
+                                        <td>Raul Alberto Hernandez Arguelles</td>
+                                        <td>Docente</td>
+                                        <td>Clima laboral</td>
+                                    </tr>
+
+                                    <tr class="table">
+                                        <td>Gerardo Joaquin Martinez Hernandez</td>
+                                        <td>Docente</td>
+                                        <td>Encuesta 2</td>
+                                    </tr>
+
+                                    <tr class="table">
+                                        <td>Jose Medellin Meliton Gonzalez</td>
+                                        <td>Administrativo</td>
+                                        <td>Clima laboral</td>
+                                    </tr>
+
+                                    <tr class="table">
+                                        <td>Juan Carlos Lopez Gonzalez</td>
+                                        <td>Auxiliar</td>
+                                        <td>Clima laboral</td>
+                                    </tr>
+
+                                    <tr class="table">
+                                        <td>Jesus Emmanuel De Leon Lerma</td>
+                                        <td>Docente</td>
+                                        <td>Encuesta 2</td>
+                                    </tr>
+
+
+                                </table>
+
                             </div>
                         </div>
+
+
+
                         <!-- BARRA LATERAL DERECHA -->
                         <div class="col-3 d-none d-lg-block">
                             <div class="root">
