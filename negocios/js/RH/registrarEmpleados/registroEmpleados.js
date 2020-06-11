@@ -84,7 +84,7 @@ function registrar_usuario(ev) {
         alert("Registro exitoso");
         $("#fm-modal").modal("hide");
 
-        location.href = "/presentacion/IniciarSesion.html";
+        location.href = "../../../../presentacion/IniciarSesion.html";
     };
 
     peticion.onreadystatechange = function () {

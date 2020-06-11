@@ -75,7 +75,7 @@ function actualizar_info(ev) {
             alert(response.error);
             return;
         }
-        location.href = "/presentacion/MenuInicio/dist/ActualizarInformacion.html";
+        location.href = "../../../../presentacion/MenuInicio/dist/ActualizarInformacion.html";
     };
 
     peticion.onreadystatechange = function() {
