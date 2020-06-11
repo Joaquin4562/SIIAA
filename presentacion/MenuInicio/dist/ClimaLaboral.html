@@ -110,8 +110,33 @@
                         <!-- CONTENIDO ENCUESTAS -->
                         <div class="col contenido-principal mt-3">
                             <div class="col-12">
-                                <h1 class="mt-4">Clima Laboral</h1>
-                                <hr>
+                                <h4 class="mt-4">Clima Laboral</h4>
+                                <div class="progress mt-3 mb-3">
+                                    <div class="progress-bar bg-success" id="barra-progreso" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                                </div>
+                                <button class="btn btn-success mb-3" id = "btn-guardar" type="button" href="#"><i class="fas fa-save"></i> Guardar</button>
+                                <nav class="navbar navbar-dark bg-light justify-content-center">
+                                    <div class="row justify-content-center">
+                                        <div class="col-12">
+                                        <button class="btn btn-success" id = "btn-b1" type="button" href="#"><i class="fas fa-calendar-check"></i></button>
+                                        <button class="btn btn-success" id = "btn-b2" type="button" href="#"><i class="fas fa-user-friends"></i></button>
+                                        <button class="btn btn-success" id = "btn-b3" type="button" href="#"><i class="fas fa-briefcase"></i></button>
+                                        <button class="btn btn-success" id = "btn-b4" type="button" href="#"><i class="fas fa-users-cog"></i></button>
+                                        <button class="btn btn-success" id = "btn-b5" type="button" href="#"><i class="fas fa-building"></i></button>
+                                        <button class="btn btn-success" id = "btn-b6" type="button" href="#"><i class="fas fa-address-book"></i></button>
+                                        <button class="btn btn-success" id = "btn-b7" type="button" href="#"><i class="fas fa-address-book"></i></button>
+                                        <button class="btn btn-success" id = "btn-b8" type="button" href="#"><i class="fas fa-universal-access"></i>I</button>
+                                        <button class="btn btn-success" id = "btn-b9" type="button" href="#"><i class="fas fa-universal-access"></i>II</button>
+                                        <button class="btn btn-success" id = "btn-b10" type="button" href="#"><i class="fas fa-universal-access"></i>III</button>
+                                        </div>
+                                    </div>
+                                </nav>
+                                <br>
+                                <div class="col" id="columna">
+                                    <div id="accordion" class="center-encuestas">
+                                        
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <!-- BARRA LATERAL DERECHA -->
@@ -130,24 +155,29 @@
                                         });
                                     </script>
                                 </div>
+
                                 <div class="row justify-content-center mt-2">
                                     <div>
                                         <button class="btn btn-success mb-1">
-                                            Dias Festivos <span class="badge badge-light">2</span>
+                                            Dias Festivos
+                                            <span class="badge badge-light"></span>
                                         </button>
                                         <button class="btn btn-danger mb-1">
-                                            Cumpleaños<span class="badge badge-light">10</span>
+                                            Cumpleaños<span class="badge badge-light"></span>
                                         </button>
                                     </div>
                                     <div>
                                         <button class="btn btn-primary mb-1">
-                                            Encuesta <span class="badge badge-light">1</span>
+                                            Encuesta
+                                            <span class="badge badge-light"></span>
                                         </button>
                                         <button class="btn btn-secondary mb-1">
-                                            Eventos <span class="badge badge-light">1</span>
+                                            Eventos
+                                            <span class="badge badge-light"></span>
                                         </button>
                                     </div>
                                 </div>
+
                                 <!--NOTAS-->
                                 <div class="contenedor-notas d-flex justify-content-center ">
                                     <div>Notas</div>
@@ -240,6 +270,7 @@
     <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
     <script src="./assets/demo/datatables-demo.js"></script>
     <script type="text/javascript" src="../../../negocios/js/shared/cerrar_sesion/cerrar_sesion.js"></script>
+    <script src="./js/encuestas.js"></script>
 </body>
 
 </html>
