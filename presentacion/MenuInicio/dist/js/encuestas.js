@@ -17,58 +17,60 @@ let bloqueActual;
 //para que al cargar la pagina muestre el formulario de datos generales primero
 readTextFile("Datos generales");
 let progreso = 0;
+status = false;
+
 function readTextFile(bloque) {
-        formularios = [];
-        bloqueActual = bloque;
-        var file = 'http://127.0.0.1:5500/presentacion/MenuInicio/src/encuesta.json';
-        var rawFile = new XMLHttpRequest();
-        rawFile.overrideMimeType("application/json");
-        rawFile.open("GET", file, true);
-        rawFile.onreadystatechange = function () {
-            if (rawFile.readyState === 4 && rawFile.status == "200") {
-                var data = JSON.parse(rawFile.responseText);
-                var col = document.getElementById("accordion");
-                for (let index = 0; index < data["bloques"].length; index++) {
-                    if (data["bloques"][index]["nombre-bloque"] == bloque) {
-                        col.innerHTML = '<div class="card">'
-                            + '<div class="card-header" id="headingOne">'
-                            + '<h5 class="mb-0">'
-                            + '<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">'
-                            + data["bloques"][index]["nombre-bloque"]
-                            + '</button>'
-                            + '</h5>'
-                            + '</div>'
-                            + '<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">'
-                            + '<div class="card-body" id = "preguntas-' + index + '">'
-                            + '</div>'
-                            + '</div>'
-                            + '</div>';
-                        break;
-                    }
+    formularios = [];
+    bloqueActual = bloque;
+    var file = 'http://127.0.0.1:5500/presentacion/MenuInicio/src/encuesta.json';
+    var rawFile = new XMLHttpRequest();
+    rawFile.overrideMimeType("application/json");
+    rawFile.open("GET", file, true);
+    rawFile.onreadystatechange = function () {
+        if (rawFile.readyState === 4 && rawFile.status == "200") {
+            var data = JSON.parse(rawFile.responseText);
+            var col = document.getElementById("accordion");
+            for (let index = 0; index < data["bloques"].length; index++) {
+                if (data["bloques"][index]["nombre-bloque"] == bloque) {
+                    col.innerHTML = '<div class="card">'
+                        + '<div class="card-header" id="headingOne">'
+                        + '<h5 class="mb-0">'
+                        + '<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">'
+                        + data["bloques"][index]["nombre-bloque"]
+                        + '</button>'
+                        + '</h5>'
+                        + '</div>'
+                        + '<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">'
+                        + '<div class="card-body" id = "preguntas-' + index + '">'
+                        + '</div>'
+                        + '</div>'
+                        + '</div>';
+                    break;
                 }
-                for (let index = 0; index < data["bloques"].length; index++) {
-                    if (data["bloques"][index]["nombre-bloque"] == bloque) {
-                        var pregunta = document.getElementById("preguntas-" + index);
-                        for (let j = 0; j < data["bloques"][index]["preguntas"].length; j++) {
-                            formularios.push("form-" + data["bloques"][index]["preguntas"][j][j + 1][0]["pregunta"]);
-                            pregunta.innerHTML += '<form id = "form-' + data["bloques"][index]["preguntas"][j][j + 1][0]["pregunta"] + '"><label class="border-bottom pregunta">' + data["bloques"][index]["preguntas"][j][j + 1][0]["pregunta"] + '</label><br></form>'
-                            for (let k = 0; k < data["bloques"][index]["preguntas"][j][j + 1][0]["respuestas"].length; k++) {
-                                let respuesta = data["bloques"][index]["preguntas"][j][j + 1][0]["respuestas"][k]["respuesta"];
-                                let valorRespuesa = data["bloques"][index]["preguntas"][j][j + 1][0]["respuestas"][k]["valor"];
-                                let form = document.getElementById("form-" + data["bloques"][index]["preguntas"][j][j + 1][0]["pregunta"]);
-                                form.innerHTML += '<div class="form-check ">'
-                                    + '<label class="form-check-label">'
-                                    + '<input type="radio" class="form-check-input" value = "' + valorRespuesa + '" name = "' + data["bloques"][index]["preguntas"][j][j + 1][0]["pregunta"] + '">'
-                                    + respuesta
-                                    + '</label>'
-                                    + '</div>';
-                            }
+            }
+            for (let index = 0; index < data["bloques"].length; index++) {
+                if (data["bloques"][index]["nombre-bloque"] == bloque) {
+                    var pregunta = document.getElementById("preguntas-" + index);
+                    for (let j = 0; j < data["bloques"][index]["preguntas"].length; j++) {
+                        formularios.push("form-" + data["bloques"][index]["preguntas"][j][j + 1][0]["pregunta"]);
+                        pregunta.innerHTML += '<form id = "form-' + data["bloques"][index]["preguntas"][j][j + 1][0]["pregunta"] + '"><label class="border-bottom pregunta">' + data["bloques"][index]["preguntas"][j][j + 1][0]["pregunta"] + '</label><br></form>'
+                        for (let k = 0; k < data["bloques"][index]["preguntas"][j][j + 1][0]["respuestas"].length; k++) {
+                            let respuesta = data["bloques"][index]["preguntas"][j][j + 1][0]["respuestas"][k]["respuesta"];
+                            let valorRespuesa = data["bloques"][index]["preguntas"][j][j + 1][0]["respuestas"][k]["valor"];
+                            let form = document.getElementById("form-" + data["bloques"][index]["preguntas"][j][j + 1][0]["pregunta"]);
+                            form.innerHTML += '<div class="form-check ">'
+                                + '<label class="form-check-label">'
+                                + '<input type="radio" class="form-check-input" value = "' + valorRespuesa + '" name = "' + data["bloques"][index]["preguntas"][j][j + 1][0]["pregunta"] + '">'
+                                + respuesta
+                                + '</label>'
+                                + '</div>';
                         }
                     }
                 }
             }
         }
-        rawFile.send();
+    }
+    rawFile.send();
 }
 function verificarRespuestas() {
     for (const key in formularios) {
@@ -108,7 +110,8 @@ function validarDatos() {
 //aumentar el progreso
 function progress(ev) {
     if (validarDatos()) {
-        if (!verificarProgreso()) {
+        verificarProgreso(bloqueActual);
+        if (!status) {
             progreso += 10;
             barra_progreso.style.width = progreso + "%";
             barra_progreso.textContent = progreso + "%";
@@ -124,10 +127,8 @@ function progress(ev) {
     }
 }
 function verificarProgreso(bloque) {
-    Boolean: status;
-    alert(datosUsuario["id_usuarios"])
-    let params = "id_usuarios=" + datosUsuario["id_usuarios"] + "&bloque=" + bloque;
-    peticion = new XMLHttpRequest();
+    let params = "id_usuarios=" + datosUsuario["idUsuario"] + "&bloque=" + bloque;
+    let peticion = new XMLHttpRequest();
     peticion.open(
         "POST",
         "http://mante.hosting.acm.org/SIIAA_backend/negocios/php/shared/encuesta/registroProgreso.php"
@@ -136,30 +137,30 @@ function verificarProgreso(bloque) {
         "Content-Type",
         "application/x-www-form-urlencoded"
     );
+    peticion.send(params);
     peticion.onload = function () {
         var response;
+        console.log("peticion response Progres", JSON.parse(peticion.responseText));
         response = JSON.parse(peticion.responseText);
-
         if (response.error) {
             alert(response.error);
             return;
         }
-        status = response.status;
-        alert(status);
-        peticion.send(params);
-        return status;
+        if(response.status == "true"){
+            status = true;
+        }else{
+            status = false;
+        }
     };
     peticion.onreadystatechange = function () {
         if (peticion.readyState == 4 && peticion.status != 200) {
             alert("Ocurrio un error, por favor inténtelo más tarde");
         }
     };
-    peticion.send(params);
 }
 function enviarResultados(pregunta, valor, idArea, bloque) {
-    alert(bloque);
     let params = "bloque=" + bloque + "&id_areas=" + idArea + "&valor_respuesta=" + valor + "&pregunta=" + pregunta;
-    peticion = new XMLHttpRequest();
+    let peticion = new XMLHttpRequest();
     peticion.open(
         "POST",
         "http://mante.hosting.acm.org/SIIAA_backend/negocios/php/shared/encuesta/registroEncuestas.php"
@@ -168,6 +169,7 @@ function enviarResultados(pregunta, valor, idArea, bloque) {
         "Content-Type",
         "application/x-www-form-urlencoded"
     );
+    peticion.send(params);
     peticion.onload = function () {
         var response;
         response = JSON.parse(peticion.responseText);
@@ -183,12 +185,11 @@ function enviarResultados(pregunta, valor, idArea, bloque) {
             alert("Ocurrio un error, por favor inténtelo más tarde");
         }
     };
-    peticion.send(params);
 }
 
 btn_b1.addEventListener("click", function () { readTextFile("Datos generales") });
-btn_b2.addEventListener("click", function () { readTextFile("Recursamiento y seleción de personal") });
-btn_b3.addEventListener("click", function () { readTextFile("Formación y capacitación") });
+btn_b2.addEventListener("click", function () { readTextFile("Recursamiento y selecion de personal") });
+btn_b3.addEventListener("click", function () { readTextFile("Formacion y capacitacion") });
 btn_b4.addEventListener("click", function () { readTextFile("Permanencia y ascenso") });
 btn_b5.addEventListener("click", function () { readTextFile("Corresponsabilidad en la vida laboral, familiar y personal") });
 btn_b6.addEventListener("click", function () { readTextFile("Clima laboral libre de violencia") });
