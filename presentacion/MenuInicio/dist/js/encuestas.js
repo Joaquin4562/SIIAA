@@ -16,8 +16,11 @@ datosUsuario = JSON.parse(localStorage.getItem('datos'));
 let bloqueActual;
 //para que al cargar la pagina muestre el formulario de datos generales primero
 readTextFile("Datos generales");
+function traerProgreso(){
+    
+}
+
 let progreso = 0;
-status = false;
 
 function readTextFile(bloque) {
     formularios = [];
@@ -111,19 +114,6 @@ function validarDatos() {
 function progress(ev) {
     if (validarDatos()) {
         verificarProgreso(bloqueActual);
-        if (!status) {
-            progreso += 10;
-            barra_progreso.style.width = progreso + "%";
-            barra_progreso.textContent = progreso + "%";
-            barra_progreso.setAttribute("aria-valuenow", progreso);
-            verificarRespuestas();
-            alert("OK")
-        } else {
-            alert("este bloque ya esta temriando");
-        }
-
-    } else {
-        alert("Favor de contestar todas las preguntas del bloque")
     }
 }
 function verificarProgreso(bloque) {
@@ -146,10 +136,18 @@ function verificarProgreso(bloque) {
             alert(response.error);
             return;
         }
-        if(response.status == "true"){
-            status = true;
-        }else{
-            status = false;
+        if (response.status == "false") {
+            progreso += 10;
+            barra_progreso.style.width = progreso + "%";
+            barra_progreso.textContent = progreso + "%";
+            barra_progreso.setAttribute("aria-valuenow", progreso);
+            verificarRespuestas();
+            alert("El progreso se guardo con exito")
+        } else {
+            alert(datosUsuario["idUsuario"]);
+            alert("este bloque ya esta temriando");
+            alert(response.idUsuario);
+            alert(response.bloque);
         }
     };
     peticion.onreadystatechange = function () {
