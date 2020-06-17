@@ -125,182 +125,122 @@
 
 
                         <!-- CONTENIDO ENCUESTAS -->
-			         <div class="col contenido-principal mt-3">
-                        <div class="col-12">
-                            <div></div>
-                            <h4 class="mt-4">Pendientes
-                            </h4>
-                        <hr>
-
-
-                        <!--  modal aviso-->
-                        <div class="modal fade" id="fn-modal" tabindex="-1" role="dialog"
-                        aria-labelledby="fm-modal" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h2 class="modal-title" id="">Escribir aviso</h2>
-                                    <button class="close" data-dismiss="modal" aria-label="Cerrar">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <form name='frmRecupera' id="frmRecupera" class="frmRecupera" method=""
-                                    action="#">
-                                    <div class="modal-body">
-
-                                        <div class="form-group">
-                                            <label for="asunto">Asunto:</label>
-                                            <input id="asunto" name="asunto" type="text"
-                                                class="form-control" placeholder="Ingrese el asunto">
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label for="mensaje">Mensaje:</label>
-                                            <textarea class="form-control" id="notaDescripcion" rows="3"
-                                                placeholder="Escriba aquí el mensaje..."></textarea>
-                                        </div>
-
-
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button class="btn btn-secondary"
-                                            data-dismiss="modal">Cancelar</button>
-                                        <button class="btn btn-primary"  type="submit">Enviar avisos</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-
+                        <div class="col contenido-principal mt-3">
+                            <div class="col-12">
+                                <h4 class="mt-4">Personal</h4>
+                                <hr />
 
                             </div> <!-- col-12 -->
                             <div class="row mt-3">
                                 <div class="col">
-                                    <div id="accordion">
 
-                                        <div class="card">
-                                            <div class="card-header" id="heading1">
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-outline-danger" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                                                        Personal con encuestas Pendientes
-                                                    </button>
-                                                    
-                                                </h5>
-                                            </div>
-                                            <div id="collapse1" class="collapse show" arial-labelledby="heading1" data-parent="#accordion">
-                                                <div class="card-body">
-                                                    <div>
+                                    <table class="table table-sm table-hover table-bordered table-responsive-lg">
+                                        <thead class="table-success">
+                                            <tr>
+                                                <th>Nombre</th>
+                                                <th>Apellido Paterno</th>
+                                                <th>Apellido Materno</th>
+                                                <th>Fecha de nac.</th>
+                                                <th>Colonia</th>
+                                                <th>Calle</th>
+                                            </tr>
+                                        </thead>
 
+                                        <tr class="table"">
+                                            <td>Raul Alberto</td>
+                                            <td>Hernandez</td>
+                                            <td>Arguelles</td>
+                                            <td>02/07/1999</td>
+                                            <td>Linares</td>
+                                            <td>Sendero</td>
+                                        </tr>
 
-                                                        <div class="d-flex bd-highlight">
-                                                            <div class="mr-auto p-2 bd-highlight">
-                                                            </div>
-                                                            <div class="p-1 bd-highlight">
-                                                            </div>
-                                                            <div class="p-1 bd-highlight">
-                                                                <button class="btn btn-primary" type="submit" form="frmAvisos"
-                                                                    id="btn-abrirAvisos" href="#" data-toggle="modal" data-target="#fn-modal">
-                                                                    Escibir aviso
-                                                                </button>
-                                                            </div>
-                                                        </div>
+                                        <tr class="table">
+                                            <td>Gerardo Joaquin</td>
+                                            <td>Martinez</td>
+                                            <td>Hernandez</td>
+                                            <td>02/07/1999</td>
+                                            <td>Linares</td>
+                                            <td>Sendero</td>
+                                        </tr>
 
+                                        <tr class="table">
+                                            <td>Jose Medellin</td>
+                                            <td>Meliton</td>
+                                            <td>Gonzalez</td>
+                                            <td>02/07/1999</td>
+                                            <td>Linares</td>
+                                            <td>Sendero</td>
+                                        </tr>
 
-                                                        <table class="table table-sm table-hover table-bordered table-responsive-lg">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>Nombre</th>
-                                                                    <th>Tipo de Empleado</th>
-                                                                    <th>Encuesta pendiente</th>
-                                                                    
-                                                                </tr>
-                                                            </thead>
+                                        <tr class="table">
+                                            <td>Juan Carlos</td>
+                                            <td>Lopez</td>
+                                            <td>Gonzalez</td>
+                                            <td>02/07/1999</td>
+                                            <td>Linares</td>
+                                            <td>Sendero</td>
+                                        </tr>
 
-                                                            <tr class="table">
-                                                                <td>Raul Alberto Hernandez Arguelles</td>
-                                                                <td>Docente</td>
-                                                                <td>Clima laboral</td>
-                                                            </tr>
-                        
-                                                            <tr class="table">
-                                                                <td>Gerardo Joaquin Martinez Hernandez</td>
-                                                                <td>Docente</td>
-                                                                <td>Encuesta 2</td>
-                                                            </tr>
-                        
-                                                            <tr class="table">
-                                                                <td>Jose Medellin Meliton Gonzalez</td>
-                                                                <td>Administrativo</td>
-                                                                <td>Clima laboral</td>
-                                                            </tr>
-                        
-                                                            <tr class="table">
-                                                                <td>Juan Carlos Lopez Gonzalez</td>
-                                                                <td>Auxiliar</td>
-                                                                <td>Clima laboral</td>
-                                                            </tr>
-                        
-                                                            <tr class="table">
-                                                                <td>Jesus Emmanuel De Leon Lerma</td>
-                                                                <td>Docente</td>
-                                                                <td>Encuesta 2</td>
-                                                            </tr>
+                                        <tr class="table">
+                                            <td>Luis Antonio</td>
+                                            <td>Estrada</td>
+                                            <td>Villegas</td>
+                                            <td>02/07/1999</td>
+                                            <td>Linares</td>
+                                            <td>Sendero</td>
+                                        </tr>
 
-                                                            </table>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="card">
-                                            <div class="card-header" id="heading2">
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-outline-success" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
-                                                       Personal sin encuestas pendientes
-                                                    </button>
-                                                    
-                                                </h5>
-                                            </div>
-                                            <div id="collapse2" class="collapse" arial-labelledby="heading2" data-parent="#accordion">
-                                                <div class="card-body">
-
-                                                    <div>
-
-                                                        <table class="table table-sm table-hover table-bordered table-responsive-lg">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>Nombre</th>
-                                                                    <th>Tipo de Empleado</th>
-                                                                    <th>Encuesta penidente</th>
-                                                                   
-                                                                </tr>
-                                                            </thead>
-
-                                                            <tr class="table-success">
-                                                                <td>Carlos</td>
-                                                                <td>21</td>
-                                                                <td>Ninguna</td>
-                                                               </tr>
-                                                            </table>
+                                        <tr class="table">
+                                            <td>Miguel Edgardo</td>
+                                            <td>Santiago</td>
+                                            <td>Hernandez</td>
+                                            <td>02/07/1999</td>
+                                            <td>Linares</td>
+                                            <td>Sendero</td>
+                                        </tr>
+                                        <tr class="table">
+                                            <td>Jose Armando</td>
+                                            <td>Tovar</td>
+                                            <td>Sanchez</td>
+                                            <td>02/07/1999</td>
+                                            <td>Linares</td>
+                                            <td>Sendero</td>
 
 
-                                                    </div>
 
-                                                </div>
-                                            </div>
-                                        </div>
+                                        </tr>
+                                        <tr class="table">
+                                            <td>Angel Eduardo</td>
+                                            <td>Catedral</td>
+                                            <td>Gonzalez</td>
+                                            <td>02/07/1999</td>
+                                            <td>Linares</td>
+                                            <td>Sendero</td>
 
-                                       
-                                        
-                                    </div>
+
+
+                                        </tr>
+
+                                        <tr class="table">
+                                            <td>Jesus Emmanuel</td>
+                                            <td>De Leon</td>
+                                            <td>Lerma</td>
+                                            <td>02/07/1999</td>
+                                            <td>Linares</td>
+                                            <td>Sendero</td>
+                                        </tr>
+
+                                    </table>
+
+                                    <a class="btn btn-primary mb-1" href="PersonalInformacion.html">ej</a>
+
+
                                 </div>
+
+
                             </div>
-
-                        </div> <!-- contenido principal -->
-                               
-
-
+                        </div>
                         <!-- BARRA LATERAL DERECHA -->
                         <div class="col-3 d-none d-lg-block">
                             <div class="root">
@@ -344,7 +284,6 @@
                                     </div>
                                 </div>
                             </div>
-                            
                             <!--NOTAS-->
                             <div class="contenedor-notas d-flex justify-content-center">
                                 <div>Notas</div>
