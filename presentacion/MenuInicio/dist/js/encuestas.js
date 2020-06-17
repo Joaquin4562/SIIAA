@@ -13,7 +13,18 @@ var barra_progreso = document.getElementById("barra-progreso");
 
 let formularios = ["jeje"];
 let bloquesTermiandos = [];
-datosUsuario = JSON.parse(localStorage.getItem('datos'));
+if (localStorage.getItem("sesion")) {
+    if (localStorage.getItem("sesion") == "true") {
+        var datosUsuario;
+        datosUsuario = JSON.parse(localStorage.getItem("datos"));
+    }
+} else if (sessionStorage.getItem("sesion")) {
+    if (sessionStorage.getItem("sesion") == "true") {
+        var datosUsuario;
+        datosUsuario = JSON.parse(sessionStorage.getItem("datos"));
+    }
+}
+
 let bloqueActual;
 //para que al cargar la pagina muestre el formulario de datos generales primero
 traerProgreso();
