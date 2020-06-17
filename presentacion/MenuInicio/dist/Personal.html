@@ -14,12 +14,11 @@
     <link rel="stylesheet" href="./css/estilos.css" />
     <link rel="stylesheet" href="css/estilos_carga.css" />
     <link rel="stylesheet" href="css/calendar.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"<
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"
         crossorigin="anonymous"></script>
     <script type="text/javascript"
         src=".././../../negocios/js/shared/verificar_sesion/verificar_sesion_inactiva.js"></script>
     <script type="text/javascript" src="../../../negocios/js/RH/verificar_rh/verificar_rh.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.js"></script>
 </head>
 
 <body class="sb-nav-fixed">
@@ -127,85 +126,121 @@
 
                         <!-- CONTENIDO ENCUESTAS -->
                         <div class="col contenido-principal mt-3">
-                           <div class="row mt-6">
                             <div class="col-12">
-                                <h4 class="mt-4">Avances</h4>
-                                <h5 class="mt-4">Areas</h5>
-                                
+                                <h4 class="mt-4">Personal</h4>
                                 <hr />
-                             <div>
 
-                                
-                             </div>
+                            </div> <!-- col-12 -->
+                            <div class="row mt-3">
+                                <div class="col">
 
-                                <div class="row mt-3">
-                                    <div class="col">
-                                        <a class="btn btn-outline-success" href="./Avances.html">Areas</a>
-                                       <a class="btn btn-outline-secondary" href="./totalavances.html">Total</a>
+                                    <table class="table table-sm table-hover table-bordered table-responsive-lg">
+                                        <thead class="table-success">
+                                            <tr>
+                                                <th>Nombre</th>
+                                                <th>Apellido Paterno</th>
+                                                <th>Apellido Materno</th>
+                                                <th>Fecha de nac.</th>
+                                                <th>Colonia</th>
+                                                <th>Calle</th>
+                                            </tr>
+                                        </thead>
 
-                                    </div>
-                                    <div class="col">
-                                        <button type="button" class="btn btn-outline-secondary">Imprimir graficos</button>
-                                    </div>
+                                        <tr class="table"">
+                                            <td>Raul Alberto</td>
+                                            <td>Hernandez</td>
+                                            <td>Arguelles</td>
+                                            <td>02/07/1999</td>
+                                            <td>Linares</td>
+                                            <td>Sendero</td>
+                                        </tr>
+
+                                        <tr class="table">
+                                            <td>Gerardo Joaquin</td>
+                                            <td>Martinez</td>
+                                            <td>Hernandez</td>
+                                            <td>02/07/1999</td>
+                                            <td>Linares</td>
+                                            <td>Sendero</td>
+                                        </tr>
+
+                                        <tr class="table">
+                                            <td>Jose Medellin</td>
+                                            <td>Meliton</td>
+                                            <td>Gonzalez</td>
+                                            <td>02/07/1999</td>
+                                            <td>Linares</td>
+                                            <td>Sendero</td>
+                                        </tr>
+
+                                        <tr class="table">
+                                            <td>Juan Carlos</td>
+                                            <td>Lopez</td>
+                                            <td>Gonzalez</td>
+                                            <td>02/07/1999</td>
+                                            <td>Linares</td>
+                                            <td>Sendero</td>
+                                        </tr>
+
+                                        <tr class="table">
+                                            <td>Luis Antonio</td>
+                                            <td>Estrada</td>
+                                            <td>Villegas</td>
+                                            <td>02/07/1999</td>
+                                            <td>Linares</td>
+                                            <td>Sendero</td>
+                                        </tr>
+
+                                        <tr class="table">
+                                            <td>Miguel Edgardo</td>
+                                            <td>Santiago</td>
+                                            <td>Hernandez</td>
+                                            <td>02/07/1999</td>
+                                            <td>Linares</td>
+                                            <td>Sendero</td>
+                                        </tr>
+                                        <tr class="table">
+                                            <td>Jose Armando</td>
+                                            <td>Tovar</td>
+                                            <td>Sanchez</td>
+                                            <td>02/07/1999</td>
+                                            <td>Linares</td>
+                                            <td>Sendero</td>
+
+
+
+                                        </tr>
+                                        <tr class="table">
+                                            <td>Angel Eduardo</td>
+                                            <td>Catedral</td>
+                                            <td>Gonzalez</td>
+                                            <td>02/07/1999</td>
+                                            <td>Linares</td>
+                                            <td>Sendero</td>
+
+
+
+                                        </tr>
+
+                                        <tr class="table">
+                                            <td>Jesus Emmanuel</td>
+                                            <td>De Leon</td>
+                                            <td>Lerma</td>
+                                            <td>02/07/1999</td>
+                                            <td>Linares</td>
+                                            <td>Sendero</td>
+                                        </tr>
+
+                                    </table>
+
+                                    <a class="btn btn-primary mb-1" href="PersonalInformacion.html">ej</a>
+
+
                                 </div>
 
-                            </div>
-                        </div>
-
-                        <div class="row mt-3">
-                            <div class="col">
-
-                                <h4>Docente <span class="btn btn-outline-success">imprimir</span></h4>
-                                <h5>Total = </h5>
-                                
-                                <canvas id="graficadocente" width=200 height="200"></canvas>
-
-
-                            </div>
-                            <div class="col">
-                                <h4>Auxiliar <span class="btn btn-outline-success">imprimir</span></h4>
-                                <h5>Total = </h5>
-                                
-                                
-                                <canvas id="auxiliar" width=200 height="200"></canvas>
 
                             </div>
                         </div>
-
-                        <div class="row mt-3">
-                            <div class="col">
-
-                                <h4>Intendente <span class="btn btn-outline-success">imprimir</span></h4>
-                                <h5>Total = </h5>
-                                
-                                <canvas id="intendentes" width=200 height="200"></canvas>
-
-                            </div>
-                            <div class="col">
-                                <h4>Administrativo <span class="btn btn-outline-success">imprimir</span></h4>
-                                <h5>Total = </h5>
-                               
-                                <canvas id="administrativo" width=200 height="200"></canvas>
-
-                            </div>
-                        </div>
-
-                        <div class="row mt-3">
-                            <div class="col">
-                                <h4>Mantenimiento <span class="btn btn-outline-success">imprimir</span></h4>
-                                <h5>Total =</h5>
-                               
-                                <canvas id="mantenimiento"" width=200 height="200"></canvas>
-
-                            </div>
-                            <div class="col">
-                                
-                            </div>
-                        </div>
-
-                    </div>
-
-
                         <!-- BARRA LATERAL DERECHA -->
                         <div class="col-3 d-none d-lg-block">
                             <div class="root">
@@ -345,136 +380,6 @@
             </footer>
         </div>
     </div>
-    <script>
-
-        var grafica_docente = document.getElementById("graficadocente").getContext("2d");
-        var editable= new Chart(grafica_docente,{
-            type:"bar",
-            data:{
-                labels:['Recursamiento','Formacion','Permanencia','Correspansabilidad','clima labora','acoso','acc1','acc2','acc3'],
-                datasets:[{
-                    label: 'numdatos',
-                    data:[1,2,3,4,5,6,7,8,9],
-                    backgroundColor:['rgb(154,145,250)','rgb(4,102,167)','rgb(54,54,54)','rgb(176,50,231)','rgb(32,163,218)','rgb(252,72,80)','rgb(248,200,34)','rgb(255,0,0)','rgb(76,186,64)']
-                }]
-
-        },
-        Option:{
-            scales:{
-                yAxes:{
-                    ticks:{
-                        beginAtZaero:true
-                    }
-                }
-            }
-        }
-        });
-    </script>
-
-<script>
-
-    var grafica_auxiliar = document.getElementById("auxiliar").getContext("2d");
-    var editable= new Chart(grafica_auxiliar,{
-        type:"bar",
-        data:{
-            labels:['Recursamiento','Formacion','Permanencia','Correspansabilidad','clima labora','acoso','acc1','acc2','acc3'],
-            datasets:[{
-                label: 'numdatos',
-                data:[1,2,3,4,5,6,7,8,9],
-                backgroundColor:['rgb(154,145,250)','rgb(4,102,167)','rgb(54,54,54)','rgb(176,50,231)','rgb(32,163,218)','rgb(252,72,80)','rgb(248,200,34)','rgb(255,0,0)','rgb(76,186,64)']
-            }]
-
-    },
-    Option:{
-        scales:{
-            yAxes:{
-                ticks:{
-                    beginAtZaero:true
-                }
-            }
-        }
-    }
-    });
-</script>
-
-<script>
-
-    var grafica_intendentes = document.getElementById("intendentes").getContext("2d");
-    var editable= new Chart(grafica_intendentes,{
-        type:"bar",
-        data:{
-            labels:['Recursamiento','Formacion','Permanencia','Correspansabilidad','clima labora','acoso','acc1','acc2','acc3'],
-            datasets:[{
-                label: 'numdatos',
-                data:[1,2,3,4,5,6,7,8,9],
-                backgroundColor:['rgb(154,145,250)','rgb(4,102,167)','rgb(54,54,54)','rgb(176,50,231)','rgb(32,163,218)','rgb(252,72,80)','rgb(248,200,34)','rgb(255,0,0)','rgb(76,186,64)']
-            }]
-
-    },
-    Option:{
-        scales:{
-            yAxes:{
-                ticks:{
-                    beginAtZaero:true
-                }
-            }
-        }
-    }
-    });
-</script>
-
-<script>
-
-    var grafica_administrativo = document.getElementById("administrativo").getContext("2d");
-    var editable= new Chart(grafica_administrativo,{
-        type:"bar",
-        data:{
-            labels:['Recursamiento','Formacion','Permanencia','Correspansabilidad','clima labora','acoso','acc1','acc2','acc3'],
-            datasets:[{
-                label: 'numdatos',
-                data:[1,2,3,4,5,6,7,8,9],
-                backgroundColor:['rgb(154,145,250)','rgb(4,102,167)','rgb(54,54,54)','rgb(176,50,231)','rgb(32,163,218)','rgb(252,72,80)','rgb(248,200,34)','rgb(255,0,0)','rgb(76,186,64)']
-            }]
-
-    },
-    Option:{
-        scales:{
-            yAxes:{
-                ticks:{
-                    beginAtZaero:true
-                }
-            }
-        }
-    }
-    });
-</script>
-
-<script>
-
-    var grafica_mantenimiento = document.getElementById("mantenimiento").getContext("2d");
-    var editable= new Chart(grafica_mantenimiento,{
-        type:"bar",
-        data:{
-            labels:['Recursamiento','Formacion','Permanencia','Correspansabilidad','clima labora','acoso','acc1','acc2','acc3'],
-            datasets:[{
-                label: 'numdatos',
-                data:[1,2,3,4,5,6,7,8,9],
-                backgroundColor:['rgb(154,145,250)','rgb(4,102,167)','rgb(54,54,54)','rgb(176,50,231)','rgb(32,163,218)','rgb(252,72,80)','rgb(248,200,34)','rgb(255,0,0)','rgb(76,186,64)']
-            }]
-
-    },
-    Option:{
-        scales:{
-            yAxes:{
-                ticks:{
-                    beginAtZaero:true
-                }
-            }
-        }
-    }
-    });
-</script>
-
     <script type="text/javascript" src="/negocios/js/shared/notas/notas_abc.js"></script>
     <script type="text/javascript" src="/negocios/js/shared/notas/notas_cargar.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>

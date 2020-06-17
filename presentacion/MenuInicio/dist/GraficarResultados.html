@@ -16,9 +16,11 @@
     <link rel="stylesheet" href="css/calendar.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"
         crossorigin="anonymous"></script>
+       
     <script type="text/javascript"
         src=".././../../negocios/js/shared/verificar_sesion/verificar_sesion_inactiva.js"></script>
     <script type="text/javascript" src="../../../negocios/js/RH/verificar_rh/verificar_rh.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.js"></script>
 </head>
 
 <body class="sb-nav-fixed">
@@ -446,6 +448,138 @@
             </footer>
         </div>
     </div>
+
+    <script>
+
+        var grafica_docente = document.getElementById("graficadocente").getContext("2d");
+        var editable= new Chart(grafica_docente,{
+            type:"bar",
+            data:{
+                labels:['Recursamiento','Formacion','Permanencia','Correspansabilidad','clima labora','acoso','acc1','acc2','acc3'],
+                datasets:[{
+                    label: 'numdatos',
+                    data:[1,2,3,4,5,6,7,8,9],
+                    backgroundColor:['rgb(154,145,250)','rgb(4,102,167)','rgb(54,54,54)','rgb(176,50,231)','rgb(32,163,218)','rgb(252,72,80)','rgb(248,200,34)','rgb(255,0,0)','rgb(76,186,64)']
+                }]
+
+        },
+        Option:{
+            scales:{
+                yAxes:{
+                    ticks:{
+                        beginAtZaero:true
+                    }
+                }
+            }
+        }
+        });
+    </script>
+
+<script>
+
+    var grafica_auxiliar = document.getElementById("auxiliar").getContext("2d");
+    var editable= new Chart(grafica_auxiliar,{
+        type:"bar",
+        data:{
+            labels:['Recursamiento','Formacion','Permanencia','Correspansabilidad','clima labora','acoso','acc1','acc2','acc3'],
+            datasets:[{
+                label: 'numdatos',
+                data:[1,2,3,4,5,6,7,8,9],
+                backgroundColor:['rgb(154,145,250)','rgb(4,102,167)','rgb(54,54,54)','rgb(176,50,231)','rgb(32,163,218)','rgb(252,72,80)','rgb(248,200,34)','rgb(255,0,0)','rgb(76,186,64)']
+            }]
+
+    },
+    Option:{
+        scales:{
+            yAxes:{
+                ticks:{
+                    beginAtZaero:true
+                }
+            }
+        }
+    }
+    });
+</script>
+
+<script>
+
+    var grafica_intendentes = document.getElementById("intendentes").getContext("2d");
+    var editable= new Chart(grafica_intendentes,{
+        type:"bar",
+        data:{
+            labels:['Recursamiento','Formacion','Permanencia','Correspansabilidad','clima labora','acoso','acc1','acc2','acc3'],
+            datasets:[{
+                label: 'numdatos',
+                data:[1,2,3,4,5,6,7,8,9],
+                backgroundColor:['rgb(154,145,250)','rgb(4,102,167)','rgb(54,54,54)','rgb(176,50,231)','rgb(32,163,218)','rgb(252,72,80)','rgb(248,200,34)','rgb(255,0,0)','rgb(76,186,64)']
+            }]
+
+    },
+    Option:{
+        scales:{
+            yAxes:{
+                ticks:{
+                    beginAtZaero:true
+                }
+            }
+        }
+    }
+    });
+</script>
+
+<script>
+
+    var grafica_administrativo = document.getElementById("administrativo").getContext("2d");
+    var editable= new Chart(grafica_administrativo,{
+        type:"bar",
+        data:{
+            labels:['Recursamiento','Formacion','Permanencia','Correspansabilidad','clima labora','acoso','acc1','acc2','acc3'],
+            datasets:[{
+                label: 'numdatos',
+                data:[1,2,3,4,5,6,7,8,9],
+                backgroundColor:['rgb(154,145,250)','rgb(4,102,167)','rgb(54,54,54)','rgb(176,50,231)','rgb(32,163,218)','rgb(252,72,80)','rgb(248,200,34)','rgb(255,0,0)','rgb(76,186,64)']
+            }]
+
+    },
+    Option:{
+        scales:{
+            yAxes:{
+                ticks:{
+                    beginAtZaero:true
+                }
+            }
+        }
+    }
+    });
+</script>
+
+<script>
+
+    var grafica_mantenimiento = document.getElementById("mantenimiento").getContext("2d");
+    var editable= new Chart(grafica_mantenimiento,{
+        type:"bar",
+        data:{
+            labels:['Recursamiento','Formacion','Permanencia','Correspansabilidad','clima labora','acoso','acc1','acc2','acc3'],
+            datasets:[{
+                label: 'numdatos',
+                data:[1,2,3,4,5,6,7,8,9],
+                backgroundColor:['rgb(154,145,250)','rgb(4,102,167)','rgb(54,54,54)','rgb(176,50,231)','rgb(32,163,218)','rgb(252,72,80)','rgb(248,200,34)','rgb(255,0,0)','rgb(76,186,64)']
+            }]
+
+    },
+    Option:{
+        scales:{
+            yAxes:{
+                ticks:{
+                    beginAtZaero:true
+                }
+            }
+        }
+    }
+    });
+</script>
+
+
     <script type="text/javascript" src="/negocios/js/shared/notas/notas_abc.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
     <script type="text/javascript" src="/negocios/js/shared/notas/notas_cargar.js"></script>
