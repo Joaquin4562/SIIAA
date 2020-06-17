@@ -125,115 +125,100 @@
 
 
                         <!-- CONTENIDO ENCUESTAS -->
-                        <div class="col contenido-principal mt-3">
-                            <div class="col-12">
-                                <h4 class="mt-4">Pendientes</h4>
-                                <hr />
+			         <div class="col contenido-principal mt-3">
+                        <div class="col-12">
+                            <div></div>
+                            <h1 class="mt-4">Pendientes
+                            </h1>
+                        <hr>
+                            </div> <!-- col-12 -->
+                            <div class="row mt-3">
+                                <div class="col">
+                                    <div id="accordion">
 
-
-
-                                <!--  modal agendar encuesta-->
-                                <div class="modal fade" id="fn-modal" tabindex="-1" role="dialog"
-                                    aria-labelledby="fm-modal" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h2 class="modal-title" id="">Escribir aviso</h2>
-                                                <button class="close" data-dismiss="modal" aria-label="Cerrar">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
+                                        <div class="card">
+                                            <div class="card-header" id="heading1">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-outline-danger" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                                        Personal con encuestas Pendientes
+                                                    </button>
+                                                    
+                                                </h5>
                                             </div>
-                                            <form name='frmRecupera' id="frmRecupera" class="frmRecupera" method=""
-                                                action="#" onsubmit="return form_clic(frmRecupera)">
-                                                <div class="modal-body">
+                                            <div id="collapse1" class="collapse show" arial-labelledby="heading1" data-parent="#accordion">
+                                                <div class="card-body">
+                                                    <div>
 
-                                                    <div class="form-group">
-                                                        <label for="asunto">Asunto:</label>
-                                                        <input id="asunto" name="asunto" type="text"
-                                                            class="form-control" placeholder="Ingrese el asunto">
+                                                        <table class="table table-sm table-hover table-bordered table-responsive-lg">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Nombre</th>
+                                                                    <th>Tipo de Empleado</th>
+                                                                    <th>Encuesta pendiente</th>
+                                                                    
+                                                                </tr>
+                                                            </thead>
+
+                                                            <tr class="table-danger">
+                                                                <td>Carlos</td>
+                                                                <td>21</td>
+                                                                <td>Clima laboral</td>
+                                                               
+                                                            </tr>
+
+                                                            </table>
+
                                                     </div>
-
-                                                    <div class="form-group">
-                                                        <label for="mensaje">Mensaje:</label>
-                                                        <textarea class="form-control" id="notaDescripcion" rows="3"
-                                                            placeholder="Escriba aquí el mensaje..."></textarea>
-                                                    </div>
-
-
                                                 </div>
-                                                <div class="modal-footer">
-                                                    <button class="btn btn-secondary"
-                                                        data-dismiss="modal">Cancelar</button>
-                                                    <button class="btn btn-primary" onclick="form_click()" type="submit"
-                                                        form="frmRecupera">Enviar avisos</button>
-                                                </div>
-                                            </form>
+                                            </div>
                                         </div>
+
+                                        <div class="card">
+                                            <div class="card-header" id="heading2">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-outline-success" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                                                       Personal sin encuestas pendientes
+                                                    </button>
+                                                    
+                                                </h5>
+                                            </div>
+                                            <div id="collapse2" class="collapse" arial-labelledby="heading2" data-parent="#accordion">
+                                                <div class="card-body">
+
+                                                    <div>
+
+                                                        <table class="table table-sm table-hover table-bordered table-responsive-lg">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Nombre</th>
+                                                                    <th>Tipo de Empleado</th>
+                                                                    <th>Encuesta penidente</th>
+                                                                   
+                                                                </tr>
+                                                            </thead>
+
+                                                            <tr class="table-success">
+                                                                <td>Carlos</td>
+                                                                <td>21</td>
+                                                                <td>Ninguna</td>
+                                                               </tr>
+                                                            </table>
+
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                       
+                                        
                                     </div>
                                 </div>
-
-
-
-                                <div class="d-flex bd-highlight">
-                                    <div class="mr-auto p-2 bd-highlight">
-                                    </div>
-                                    <div class="p-1 bd-highlight">
-                                    </div>
-                                    <div class="p-1 bd-highlight">
-                                        <button class="btn btn-primary" type="submit" form="frmAvisos"
-                                            id="btn-abrirAvisos" href="#" data-toggle="modal" data-target="#fn-modal">
-                                            Escibir aviso
-                                        </button>
-                                    </div>
-                                </div>
-
-
-                                <table class="table table-primary table-sm table-bordered  mt-2">
-                                    <thead>
-                                        <tr>
-                                            <th>Nombre</th>
-                                            <th>Tipo de empleado</th>
-                                            <th>Enuesta pendiente</th>
-                                        </tr>
-                                    </thead>
-
-
-                                    <tr class="table">
-                                        <td>Raul Alberto Hernandez Arguelles</td>
-                                        <td>Docente</td>
-                                        <td>Clima laboral</td>
-                                    </tr>
-
-                                    <tr class="table">
-                                        <td>Gerardo Joaquin Martinez Hernandez</td>
-                                        <td>Docente</td>
-                                        <td>Encuesta 2</td>
-                                    </tr>
-
-                                    <tr class="table">
-                                        <td>Jose Medellin Meliton Gonzalez</td>
-                                        <td>Administrativo</td>
-                                        <td>Clima laboral</td>
-                                    </tr>
-
-                                    <tr class="table">
-                                        <td>Juan Carlos Lopez Gonzalez</td>
-                                        <td>Auxiliar</td>
-                                        <td>Clima laboral</td>
-                                    </tr>
-
-                                    <tr class="table">
-                                        <td>Jesus Emmanuel De Leon Lerma</td>
-                                        <td>Docente</td>
-                                        <td>Encuesta 2</td>
-                                    </tr>
-
-
-                                </table>
-
                             </div>
-                        </div>
 
+                        </div> <!-- contenido principal -->
+                               
 
 
                         <!-- BARRA LATERAL DERECHA -->
@@ -279,6 +264,7 @@
                                     </div>
                                 </div>
                             </div>
+                            
                             <!--NOTAS-->
                             <div class="contenedor-notas d-flex justify-content-center">
                                 <div>Notas</div>
