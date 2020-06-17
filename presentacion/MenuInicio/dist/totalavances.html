@@ -130,8 +130,7 @@
                            <div class="row mt-6">
                             <div class="col-12">
                                 <h4 class="mt-4">Avances</h4>
-                                <h5 class="mt-4">Areas</h5>
-                                
+                                <h5 class="mt-4">Total</h5>
                                 <hr />
                              <div>
 
@@ -140,8 +139,8 @@
 
                                 <div class="row mt-3">
                                     <div class="col">
-                                        <a class="btn btn-outline-success" href="./Avances.html">Areas</a>
-                                       <a class="btn btn-outline-secondary" href="./totalavances.html">Total</a>
+                                        <a class="btn btn-outline-secondary" href="./Avances.html">Areas</a>
+                                       <a class="btn btn-outline-success" href="./totalavances.html">Total</a>
 
                                     </div>
                                     <div class="col">
@@ -152,59 +151,17 @@
                             </div>
                         </div>
 
-                        <div class="row mt-3">
-                            <div class="col">
+                        <div class="col">
+                            <h4>Reporte Total <span class="btn btn-outline-success">imprimir</span></h4>
+                            <h5>Total =</h5>
+                           
+                            <canvas id="total" width=100 height="100"></canvas>
 
-                                <h4>Docente <span class="btn btn-outline-success">imprimir</span></h4>
-                                <h5>Total = </h5>
-                                
-                                <canvas id="graficadocente" width=200 height="200"></canvas>
-
-
-                            </div>
-                            <div class="col">
-                                <h4>Auxiliar <span class="btn btn-outline-success">imprimir</span></h4>
-                                <h5>Total = </h5>
-                                
-                                
-                                <canvas id="auxiliar" width=200 height="200"></canvas>
-
-                            </div>
                         </div>
-
-                        <div class="row mt-3">
-                            <div class="col">
-
-                                <h4>Intendente <span class="btn btn-outline-success">imprimir</span></h4>
-                                <h5>Total = </h5>
-                                
-                                <canvas id="intendentes" width=200 height="200"></canvas>
-
-                            </div>
-                            <div class="col">
-                                <h4>Administrativo <span class="btn btn-outline-success">imprimir</span></h4>
-                                <h5>Total = </h5>
-                               
-                                <canvas id="administrativo" width=200 height="200"></canvas>
-
-                            </div>
+                        <div class="col">
+                            
                         </div>
-
-                        <div class="row mt-3">
-                            <div class="col">
-                                <h4>Mantenimiento <span class="btn btn-outline-success">imprimir</span></h4>
-                                <h5>Total =</h5>
-                               
-                                <canvas id="mantenimiento"" width=200 height="200"></canvas>
-
-                            </div>
-                            <div class="col">
-                                
-                            </div>
-                        </div>
-
                     </div>
-
 
                         <!-- BARRA LATERAL DERECHA -->
                         <div class="col-3 d-none d-lg-block">
@@ -347,8 +304,8 @@
     </div>
     <script>
 
-        var grafica_docente = document.getElementById("graficadocente").getContext("2d");
-        var editable= new Chart(grafica_docente,{
+        var grafica_total = document.getElementById("total").getContext("2d");
+        var editable= new Chart(grafica_total,{
             type:"bar",
             data:{
                 labels:['Recursamiento','Formacion','Permanencia','Correspansabilidad','clima labora','acoso','acc1','acc2','acc3'],
@@ -371,109 +328,7 @@
         });
     </script>
 
-<script>
 
-    var grafica_auxiliar = document.getElementById("auxiliar").getContext("2d");
-    var editable= new Chart(grafica_auxiliar,{
-        type:"bar",
-        data:{
-            labels:['Recursamiento','Formacion','Permanencia','Correspansabilidad','clima labora','acoso','acc1','acc2','acc3'],
-            datasets:[{
-                label: 'numdatos',
-                data:[1,2,3,4,5,6,7,8,9],
-                backgroundColor:['rgb(154,145,250)','rgb(4,102,167)','rgb(54,54,54)','rgb(176,50,231)','rgb(32,163,218)','rgb(252,72,80)','rgb(248,200,34)','rgb(255,0,0)','rgb(76,186,64)']
-            }]
-
-    },
-    Option:{
-        scales:{
-            yAxes:{
-                ticks:{
-                    beginAtZaero:true
-                }
-            }
-        }
-    }
-    });
-</script>
-
-<script>
-
-    var grafica_intendentes = document.getElementById("intendentes").getContext("2d");
-    var editable= new Chart(grafica_intendentes,{
-        type:"bar",
-        data:{
-            labels:['Recursamiento','Formacion','Permanencia','Correspansabilidad','clima labora','acoso','acc1','acc2','acc3'],
-            datasets:[{
-                label: 'numdatos',
-                data:[1,2,3,4,5,6,7,8,9],
-                backgroundColor:['rgb(154,145,250)','rgb(4,102,167)','rgb(54,54,54)','rgb(176,50,231)','rgb(32,163,218)','rgb(252,72,80)','rgb(248,200,34)','rgb(255,0,0)','rgb(76,186,64)']
-            }]
-
-    },
-    Option:{
-        scales:{
-            yAxes:{
-                ticks:{
-                    beginAtZaero:true
-                }
-            }
-        }
-    }
-    });
-</script>
-
-<script>
-
-    var grafica_administrativo = document.getElementById("administrativo").getContext("2d");
-    var editable= new Chart(grafica_administrativo,{
-        type:"bar",
-        data:{
-            labels:['Recursamiento','Formacion','Permanencia','Correspansabilidad','clima labora','acoso','acc1','acc2','acc3'],
-            datasets:[{
-                label: 'numdatos',
-                data:[1,2,3,4,5,6,7,8,9],
-                backgroundColor:['rgb(154,145,250)','rgb(4,102,167)','rgb(54,54,54)','rgb(176,50,231)','rgb(32,163,218)','rgb(252,72,80)','rgb(248,200,34)','rgb(255,0,0)','rgb(76,186,64)']
-            }]
-
-    },
-    Option:{
-        scales:{
-            yAxes:{
-                ticks:{
-                    beginAtZaero:true
-                }
-            }
-        }
-    }
-    });
-</script>
-
-<script>
-
-    var grafica_mantenimiento = document.getElementById("mantenimiento").getContext("2d");
-    var editable= new Chart(grafica_mantenimiento,{
-        type:"bar",
-        data:{
-            labels:['Recursamiento','Formacion','Permanencia','Correspansabilidad','clima labora','acoso','acc1','acc2','acc3'],
-            datasets:[{
-                label: 'numdatos',
-                data:[1,2,3,4,5,6,7,8,9],
-                backgroundColor:['rgb(154,145,250)','rgb(4,102,167)','rgb(54,54,54)','rgb(176,50,231)','rgb(32,163,218)','rgb(252,72,80)','rgb(248,200,34)','rgb(255,0,0)','rgb(76,186,64)']
-            }]
-
-    },
-    Option:{
-        scales:{
-            yAxes:{
-                ticks:{
-                    beginAtZaero:true
-                }
-            }
-        }
-    }
-    });
-</script>
 
     <script type="text/javascript" src="/negocios/js/shared/notas/notas_abc.js"></script>
     <script type="text/javascript" src="/negocios/js/shared/notas/notas_cargar.js"></script>
