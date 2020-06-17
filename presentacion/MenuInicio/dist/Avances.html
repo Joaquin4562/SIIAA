@@ -19,6 +19,7 @@
     <script type="text/javascript"
         src=".././../../negocios/js/shared/verificar_sesion/verificar_sesion_inactiva.js"></script>
     <script type="text/javascript" src="../../../negocios/js/RH/verificar_rh/verificar_rh.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.js"></script>
 </head>
 
 <body class="sb-nav-fixed">
@@ -132,14 +133,7 @@
                                 <hr />
                              <div>
 
-                                <span class="badge badge-primary">Reclutamiento y seleccion del personal</span>
-                                <span class="badge badge-secondary">Formacion y capacitación</span>
-                                <span class="badge badge-success">Permanencia y ascenso</span>
-                                <span class="badge badge-danger">Corresponsabilidad en la vida labora, familiar y personal</span>
-                                <span class="badge badge-warning">Clima laboral libre de violencia</span>
-                                <span class="badge badge-info">Acoso y hostigamiento</span>
-                                <span class="badge badge-dark">Acceso 1,2,3</span>
-
+                                
                              </div>
 
                                 <div class="row mt-3">
@@ -159,57 +153,19 @@
                         <div class="row mt-3">
                             <div class="col">
 
-                                <h4>Docente</h4>
-                                <h5>Total =</h5>
-                                <div class="progress mb-3" style="height: 30px;">
-                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 50%;">50%</div>
-                                </div>
-                                <div class="progress mb-3" style="height: 30px;">
-                                    <div class="progress-bar bg-secondary" role="progressbar" style="width: 50%;">50%</div>
-                                </div>
-                                <div class="progress mb-3" style="height: 30px;">
-                                    <div class="progress-bar bg-success" role="progressbar" style="width: 50%;">50%</div>
-                                </div>
-                                <div class="progress mb-3" style="height: 30px;">
-                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 50%;">50%</div>
-                                </div>
-                                <div class="progress mb-3" style="height: 30px;">
-                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 50%;">50%</div>
-                                </div>
-                                <div class="progress mb-3" style="height: 30px;">
-                                    <div class="progress-bar bg-info" role="progressbar" style="width: 50%;">50%</div>
-                                </div>
-                                <div class="progress mb-3" style="height: 30px;">
-                                    <div class="progress-bar bg-dark" role="progressbar" style="width: 50%;">50%</div>
-                                </div>
+                                <h4>Docente <span class="btn btn-outline-success">imprimir</span></h4>
+                                <h5>Total = </h5>
                                 
+                                <canvas id="graficadocente" width=200 height="200"></canvas>
 
 
                             </div>
                             <div class="col">
-                                <h4>Auxiliar</h4>
-                                <h5>Total =</h5>
-                                <div class="progress mb-3" style="height: 30px;">
-                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 50%;">50%</div>
-                                </div>
-                                <div class="progress mb-3" style="height: 30px;">
-                                    <div class="progress-bar bg-secondary" role="progressbar" style="width: 50%;">50%</div>
-                                </div>
-                                <div class="progress mb-3" style="height: 30px;">
-                                    <div class="progress-bar bg-success" role="progressbar" style="width: 50%;">50%</div>
-                                </div>
-                                <div class="progress mb-3" style="height: 30px;">
-                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 50%;">50%</div>
-                                </div>
-                                <div class="progress mb-3" style="height: 30px;">
-                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 50%;">50%</div>
-                                </div>
-                                <div class="progress mb-3" style="height: 30px;">
-                                    <div class="progress-bar bg-info" role="progressbar" style="width: 50%;">50%</div>
-                                </div>
-                                <div class="progress mb-3" style="height: 30px;">
-                                    <div class="progress-bar bg-dark" role="progressbar" style="width: 50%;">50%</div>
-                                </div>
+                                <h4>Auxiliar <span class="btn btn-outline-success">imprimir</span></h4>
+                                <h5>Total = </h5>
+                                
+                                
+                                <canvas id="auxiliar" width=200 height="200"></canvas>
 
                             </div>
                         </div>
@@ -217,85 +173,27 @@
                         <div class="row mt-3">
                             <div class="col">
 
-                                <h4>Intendente</h4>
-                                <h5>Total =</h5>
-                                <div class="progress mb-3" style="height: 30px;">
-                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 50%;">50%</div>
-                                </div>
-                                <div class="progress mb-3" style="height: 30px;">
-                                    <div class="progress-bar bg-secondary" role="progressbar" style="width: 50%;">50%</div>
-                                </div>
-                                <div class="progress mb-3" style="height: 30px;">
-                                    <div class="progress-bar bg-success" role="progressbar" style="width: 50%;">50%</div>
-                                </div>
-                                <div class="progress mb-3" style="height: 30px;">
-                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 50%;">50%</div>
-                                </div>
-                                <div class="progress mb-3" style="height: 30px;">
-                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 50%;">50%</div>
-                                </div>
-                                <div class="progress mb-3" style="height: 30px;">
-                                    <div class="progress-bar bg-info" role="progressbar" style="width: 50%;">50%</div>
-                                </div>
-                                <div class="progress mb-3" style="height: 30px;">
-                                    <div class="progress-bar bg-dark" role="progressbar" style="width: 50%;">50%</div>
-                                </div>
-
+                                <h4>Intendente <span class="btn btn-outline-success">imprimir</span></h4>
+                                <h5>Total = </h5>
+                                
+                                <canvas id="intendentes" width=200 height="200"></canvas>
 
                             </div>
                             <div class="col">
-                                <h4>Administrativo</h4>
-                                <h5>Total =</h5>
-                                <div class="progress mb-3" style="height: 30px;">
-                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 50%;">50%</div>
-                                </div>
-                                <div class="progress mb-3" style="height: 30px;">
-                                    <div class="progress-bar bg-secondary" role="progressbar" style="width: 50%;">50%</div>
-                                </div>
-                                <div class="progress mb-3" style="height: 30px;">
-                                    <div class="progress-bar bg-success" role="progressbar" style="width: 50%;">50%</div>
-                                </div>
-                                <div class="progress mb-3" style="height: 30px;">
-                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 50%;">50%</div>
-                                </div>
-                                <div class="progress mb-3" style="height: 30px;">
-                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 50%;">50%</div>
-                                </div>
-                                <div class="progress mb-3" style="height: 30px;">
-                                    <div class="progress-bar bg-info" role="progressbar" style="width: 50%;">50%</div>
-                                </div>
-                                <div class="progress mb-3" style="height: 30px;">
-                                    <div class="progress-bar bg-dark" role="progressbar" style="width: 50%;">50%</div>
-                                </div>
+                                <h4>Administrativo <span class="btn btn-outline-success">imprimir</span></h4>
+                                <h5>Total = </h5>
+                               
+                                <canvas id="administrativo" width=200 height="200"></canvas>
 
                             </div>
                         </div>
 
                         <div class="row mt-3">
                             <div class="col">
-                                <h4>Mantenimiento</h4>
+                                <h4>Mantenimiento <span class="btn btn-outline-success">imprimir</span></h4>
                                 <h5>Total =</h5>
-                                <div class="progress mb-3" style="height: 30px;">
-                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 50%;">50%</div>
-                                </div>
-                                <div class="progress mb-3" style="height: 30px;">
-                                    <div class="progress-bar bg-secondary" role="progressbar" style="width: 50%;">50%</div>
-                                </div>
-                                <div class="progress mb-3" style="height: 30px;">
-                                    <div class="progress-bar bg-success" role="progressbar" style="width: 50%;">50%</div>
-                                </div>
-                                <div class="progress mb-3" style="height: 30px;">
-                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 50%;">50%</div>
-                                </div>
-                                <div class="progress mb-3" style="height: 30px;">
-                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 50%;">50%</div>
-                                </div>
-                                <div class="progress mb-3" style="height: 30px;">
-                                    <div class="progress-bar bg-info" role="progressbar" style="width: 50%;">50%</div>
-                                </div>
-                                <div class="progress mb-3" style="height: 30px;">
-                                    <div class="progress-bar bg-dark" role="progressbar" style="width: 50%;">50%</div>
-                                </div>
+                               
+                                <canvas id="mantenimiento"" width=200 height="200"></canvas>
 
                             </div>
                             <div class="col">
@@ -445,6 +343,136 @@
             </footer>
         </div>
     </div>
+    <script>
+
+        var grafica_docente = document.getElementById("graficadocente").getContext("2d");
+        var editable= new Chart(grafica_docente,{
+            type:"bar",
+            data:{
+                labels:['col1','col2','col3','col4','col5','col6','col7','col8','col9'],
+                datasets:[{
+                    label: 'numdatos',
+                    data:[1,2,3,4,5,6,7,8,9],
+                    backgroundColor:['rgb(154,145,250)','rgb(4,102,167)','rgb(54,54,54)','rgb(176,50,231)','rgb(32,163,218)','rgb(252,72,80)','rgb(248,200,34)','rgb(255,0,0)','rgb(76,186,64)']
+                }]
+
+        },
+        Option:{
+            scales:{
+                yAxes:{
+                    ticks:{
+                        beginAtZaero:true
+                    }
+                }
+            }
+        }
+        });
+    </script>
+
+<script>
+
+    var grafica_auxiliar = document.getElementById("auxiliar").getContext("2d");
+    var editable= new Chart(grafica_auxiliar,{
+        type:"bar",
+        data:{
+            labels:['col1','col2','col3','col4','col5','col6','col7','col8','col9'],
+            datasets:[{
+                label: 'numdatos',
+                data:[1,2,3,4,5,6,7,8,9],
+                backgroundColor:['rgb(154,145,250)','rgb(4,102,167)','rgb(54,54,54)','rgb(176,50,231)','rgb(32,163,218)','rgb(252,72,80)','rgb(248,200,34)','rgb(255,0,0)','rgb(76,186,64)']
+            }]
+
+    },
+    Option:{
+        scales:{
+            yAxes:{
+                ticks:{
+                    beginAtZaero:true
+                }
+            }
+        }
+    }
+    });
+</script>
+
+<script>
+
+    var grafica_intendentes = document.getElementById("intendentes").getContext("2d");
+    var editable= new Chart(grafica_intendentes,{
+        type:"bar",
+        data:{
+            labels:['col1','col2','col3','col4','col5','col6','col7','col8','col9'],
+            datasets:[{
+                label: 'numdatos',
+                data:[1,2,3,4,5,6,7,8,9],
+                backgroundColor:['rgb(154,145,250)','rgb(4,102,167)','rgb(54,54,54)','rgb(176,50,231)','rgb(32,163,218)','rgb(252,72,80)','rgb(248,200,34)','rgb(255,0,0)','rgb(76,186,64)']
+            }]
+
+    },
+    Option:{
+        scales:{
+            yAxes:{
+                ticks:{
+                    beginAtZaero:true
+                }
+            }
+        }
+    }
+    });
+</script>
+
+<script>
+
+    var grafica_administrativo = document.getElementById("administrativo").getContext("2d");
+    var editable= new Chart(grafica_administrativo,{
+        type:"bar",
+        data:{
+            labels:['col1','col2','col3','col4','col5','col6','col7','col8','col9'],
+            datasets:[{
+                label: 'numdatos',
+                data:[1,2,3,4,5,6,7,8,9],
+                backgroundColor:['rgb(154,145,250)','rgb(4,102,167)','rgb(54,54,54)','rgb(176,50,231)','rgb(32,163,218)','rgb(252,72,80)','rgb(248,200,34)','rgb(255,0,0)','rgb(76,186,64)']
+            }]
+
+    },
+    Option:{
+        scales:{
+            yAxes:{
+                ticks:{
+                    beginAtZaero:true
+                }
+            }
+        }
+    }
+    });
+</script>
+
+<script>
+
+    var grafica_mantenimiento = document.getElementById("mantenimiento").getContext("2d");
+    var editable= new Chart(grafica_mantenimiento,{
+        type:"bar",
+        data:{
+            labels:['col1','col2','col3','col4','col5','col6','col7','col8','col9'],
+            datasets:[{
+                label: 'numdatos',
+                data:[1,2,3,4,5,6,7,8,9],
+                backgroundColor:['rgb(154,145,250)','rgb(4,102,167)','rgb(54,54,54)','rgb(176,50,231)','rgb(32,163,218)','rgb(252,72,80)','rgb(248,200,34)','rgb(255,0,0)','rgb(76,186,64)']
+            }]
+
+    },
+    Option:{
+        scales:{
+            yAxes:{
+                ticks:{
+                    beginAtZaero:true
+                }
+            }
+        }
+    }
+    });
+</script>
+
     <script type="text/javascript" src="/negocios/js/shared/notas/notas_abc.js"></script>
     <script type="text/javascript" src="/negocios/js/shared/notas/notas_cargar.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
