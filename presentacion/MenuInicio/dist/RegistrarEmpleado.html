@@ -14,10 +14,8 @@
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="./css/estilos_carga.css">
     <link rel="stylesheet" href="./css/calendar.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"
-        crossorigin="anonymous"></script>
-    <script type="text/javascript"
-        src="../../../negocios/js/shared/verificar_sesion/verificar_sesion_inactiva.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../../../negocios/js/shared/verificar_sesion/verificar_sesion_inactiva.js"></script>
     <script type="text/javascript" src="../../../negocios/js/RH/verificar_rh/verificar_rh.js"></script>
 </head>
 
@@ -25,8 +23,7 @@
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i
                 class="fas fa-bars"></i></button>
-        <a class="navbar-brand" href="../../../index.html"><img src="../../../presentacion/img/logotec.png" height="30"
-                width="30">Tecnológico Nacional de México</a>
+        <a class="navbar-brand" href="../../../index.html"><img src="../../../presentacion/img/logotec.png" height="30" width="30">Tecnológico Nacional de México</a>
         <!-- Navbar Search-->
         <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
             <div class="input-group">
@@ -35,8 +32,7 @@
         <!-- Navbar-->
         <ul class="navbar-nav ml-auto ml-md-0">
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
                     <a class="dropdown-item" href="#">Configuración</a>
                     <div class="dropdown-divider"></div>
@@ -52,42 +48,34 @@
                     <div class="nav">
                         <div class="sb-sidenav-menu-heading">
                             <div class="col-12 foto">
-                                <a href="#"> <img class="imagen" src="../../../presentacion/img/chino.png" height="150"
-                                        width="150" alt=""></a>
+                                <a href="#">
+                                    <img id="foto_perfil" name="foto_perfil" class="imagen" src="../../../presentacion/img/cargando_foto.png" height="150" width="150" alt="" /></a>
                             </div>
-                            <h5 class="titulo-nombre">Raul Hernandez </h5>
-                            <h5 class="titulo-usuario">Administrador</h5>
+                            <h5 id="nombre_usuario" name="nombre_usuario" class="titulo-nombre">Cargando...</h5>
+                            <h5 id="tipo_usuario" name="tipo_usuario" class="titulo-usuario">Cargando.../h5>
                         </div>
                         <div class="sb-sidenav-menu-heading">Mi cuenta</div>
                         <a class="nav-link" href="./Inicio.html">
                             <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                             Inicio
                         </a>
-                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts"
-                            aria-expanded="false" aria-controls="collapseLayouts">
+                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                             <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                             Perfil
                             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                         </a>
-                        <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne"
-                            data-parent="#sidenavAccordion">
-                            <nav class="sb-sidenav-menu-nested nav"><a class="nav-link"
-                                    href="./ActualizarInformacion.html">Actualizar Información</a><a class="nav-link"
-                                    href="./SubirArchivos.html">Subir Archivos</a></nav>
+                        <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav"><a class="nav-link" href="./ActualizarInformacion.html">Actualizar Información</a><a class="nav-link" href="./SubirArchivos.html">Subir Archivos</a></nav>
                         </div>
                         <div class="sb-sidenav-menu-heading">Mis Encuestas</div>
-                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-                            aria-expanded="false" aria-controls="collapsePages">
+                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
                             <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>Encuestas
                             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                         </a>
-                        <div class="collapse" id="collapsePages" aria-labelledby="headingTwo"
-                            data-parent="#sidenavAccordion">
+                        <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
                                 <a class="nav-link" href="./ClimaLaboral.html">Clima Laboral</a>
-                                <a class="nav-link collapsed" href="#" data-toggle="collapse"
-                                    data-target="#pagesCollapseError" aria-expanded="false"
-                                    aria-controls="pagesCollapseError">Encuesta 2
+                                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">Encuesta 2
                                     <div class="sb-sidenav-collapse-arrow"></div>
                                 </a>
                             </nav>
@@ -118,29 +106,21 @@
                                                 <h6 class="subtitle border-bottom">Información básica</h6>
                                             </div>
                                             <label>Nombre(s):<span class="spa">*</span></label>
-                                            <input type="text" class="form-control" id="nombre"
-                                                placeholder="Ingrese su nombre">
+                                            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
                                             <label class="mt-3">Apellido paterno:<span class="spa">*</span></label>
-                                            <input type="text" class="form-control" id="apellidopaterno"
-                                                placeholder="Ingrese su apellido paterno">
+                                            <input type="text" class="form-control" id="apellidopaterno" placeholder="Ingrese su apellido paterno">
                                             <label class="mt-3">Apellido materno:<span class="spa">*</span></label>
-                                            <input type="text" class="form-control" id="apellidomaterno"
-                                                placeholder="Ingrese su apellido materno">
+                                            <input type="text" class="form-control" id="apellidomaterno" placeholder="Ingrese su apellido materno">
                                             <label class="mt-3">Fecha de nacimiento:<span class="spa">*</span></label>
-                                            <input type="date" class="form-control" id="fechaNacimiento"
-                                                placeholder="Ingrese la fecha de nacimiento">
+                                            <input type="date" class="form-control" id="fechaNacimiento" placeholder="Ingrese la fecha de nacimiento">
                                             <label class="mt-3">Estado:<span class="spa">*</span></label>
-                                            <input type="text" class="form-control" id="estado"
-                                                placeholder="Ingrese su estado">
+                                            <input type="text" class="form-control" id="estado" placeholder="Ingrese su estado">
                                             <label class="mt-3">Ciudad:<span class="spa">*</span></label>
-                                            <input type="text" class="form-control" id="ciudad"
-                                                placeholder="Ingrese su ciudad">
+                                            <input type="text" class="form-control" id="ciudad" placeholder="Ingrese su ciudad">
                                             <label class="mt-3">Municipio:<span class="spa">*</span></label>
-                                            <input type="text" class="form-control" id="municipio"
-                                                placeholder="Ingrese su ciudad">
+                                            <input type="text" class="form-control" id="municipio" placeholder="Ingrese su ciudad">
                                             <label class="mt-3">Codigo Postal:<span class="spa">*</span></label>
-                                            <input type="text" class="form-control" id="codigoPostal"
-                                                placeholder="Ingrese su ciudad">
+                                            <input type="text" class="form-control" id="codigoPostal" placeholder="Ingrese su ciudad">
                                             <label class="mt-3">Area:<span class="spa">*</span></label>
                                             <div class="input-group mb-3">
                                                 <div class="input-group-prepend">
@@ -160,34 +140,25 @@
                                                 <h6 class="subtitle border-bottom">Información de contacto</h6>
                                             </div>
                                             <label>Colonia:<span class="spa">*</span></label>
-                                            <input type="text" class="form-control" id="colonia"
-                                                placeholder="Ingrese su colonia">
+                                            <input type="text" class="form-control" id="colonia" placeholder="Ingrese su colonia">
                                             <label class="mt-3">Calle:<span class="spa">*</span></label>
-                                            <input type="text" class="form-control mt-" id="calle"
-                                                placeholder="Ingrese su calle">
+                                            <input type="text" class="form-control mt-" id="calle" placeholder="Ingrese su calle">
                                             <label class="mt-3">Número exterior:<span class="spa">*</span></label>
-                                            <input type="text" class="form-control" id="numExterior"
-                                                placeholder="Ingrese su número exterior">
+                                            <input type="text" class="form-control" id="numExterior" placeholder="Ingrese su número exterior">
                                             <label class="mt-3">Número interior:<span class="spa-no">*</span></label>
-                                            <input type="text" class="form-control" id="numInterior"
-                                                placeholder="Ingrese su número interior">
+                                            <input type="text" class="form-control" id="numInterior" placeholder="Ingrese su número interior">
                                             <label class="mt-3">Correo electrónico:<span class="spa">*</span></label>
-                                            <input type="text" class="form-control" id="correo"
-                                                placeholder="Ingrese su coreo electrónico">
+                                            <input type="text" class="form-control" id="correo" placeholder="Ingrese su coreo electrónico">
                                             <label class="mt-3">Número de celular:<span class="spa">*</span></label>
-                                            <input type="text" class="form-control" id="numCelular"
-                                                placeholder="Ingrese su número de celular">
+                                            <input type="text" class="form-control" id="numCelular" placeholder="Ingrese su número de celular">
                                             <label class="mt-3">Contraseña:<span class="spa">*</span></label>
-                                            <input type="password" class="form-control" id="contraseña"
-                                                placeholder="Ingrese su contraseña">
+                                            <input type="password" class="form-control" id="contraseña" placeholder="Ingrese su contraseña">
                                             <label class="mt-3">Confirmar contraseña:<span class="spa">*</span></label>
-                                            <input type="password" class="form-control" id="ConfirmarContraseña"
-                                                placeholder="Confirme su contraseña ">
+                                            <input type="password" class="form-control" id="ConfirmarContraseña" placeholder="Confirme su contraseña ">
                                         </div>
                                     </form>
                                     <div class="row flex-row-reverse mr-1 mb-3">
-                                        <button class="btn btn-success" data-target="#fm-modal"
-                                            id="btn-registrar">Registrar</button>
+                                        <button class="btn btn-success" data-target="#fm-modal" id="btn-registrar">Registrar</button>
                                     </div>
                                 </div>
                             </div>
@@ -197,10 +168,8 @@
                             <div class="root">
                                 <div class="calendar" id="calendar">
                                 </div>
-                                <script type="text/javascript"
-                                    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-                                <script type="text/javascript"
-                                    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js"></script>
+                                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+                                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js"></script>
                                 <script type="text/javascript" src="./js/calendar.js"></script>
                                 <script type="text/javascript">
                                     let calendar = new Calendar('calendar');
@@ -234,8 +203,7 @@
                                     <div class="row">
                                         <div class="col-12">
                                             <ul class="list-group">
-                                                <script type="text/javascript"
-                                                    src="../../../negocios/js/shared/notas/notas_cargar.js"></script>
+                                                <script type="text/javascript" src="../../../negocios/js/shared/notas/notas_cargar.js"></script>
                                                 <!-- <a id="btn-abrirnotas" href="#" data-toggle="modal"
                                                     data-target="#fm-modal" class="list-group-item">
                                                     <p><small> 09:45 </small> Esta es la primera nota</p>
@@ -258,13 +226,11 @@
                                     <div class="flex-end row p-2">
                                         <div class="col "></div>
                                         <div>
-                                            <button class="mr-2 btn btn-outline-primary" id="btn-abrirnotas" href="#"
-                                                data-toggle="modal" data-target="#fm-modal">Crear Nota</button>
+                                            <button class="mr-2 btn btn-outline-primary" id="btn-abrirnotas" href="#" data-toggle="modal" data-target="#fm-modal">Crear Nota</button>
                                         </div>
                                     </div>
                                     <!--Ventana modal nota-->
-                                    <div class="modal fade" id="fm-modal" tabindex="-1" role="dialog"
-                                        aria-labelledby="fm-modal" aria-hidden="true">
+                                    <div class="modal fade" id="fm-modal" tabindex="-1" role="dialog" aria-labelledby="fm-modal" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered">
                                             <div class="modal-content">
                                                 <div class="cabecera-modal">
@@ -277,24 +243,18 @@
                                                 <form name='' id="" class="" method="" action="#" onsubmit="">
                                                     <div class="modal-body">
                                                         <div class="form-group">
-                                                            <textarea class="form-control"
-                                                                id="exampleFormControlTextarea1" rows="3"
-                                                                placeholder="Escriba aquí..."></textarea>
+                                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escriba aquí..."></textarea>
                                                         </div>
                                                     </div>
                                                     <div class="d-flex bd-highlight mb-3">
                                                         <div class="mr-auto p-2 bd-highlight">
-                                                            <button class="m btn btn-outline-danger disabled"
-                                                                id="btn-abrirnotas" href="#"
-                                                                data-toggle="modal">Eliminar</button>
+                                                            <button class="m btn btn-outline-danger disabled" id="btn-abrirnotas" href="#" data-toggle="modal">Eliminar</button>
                                                         </div>
                                                         <div class="p-2 bd-highlight">
-                                                            <button class="btn btn-secondary "
-                                                                data-dismiss="modal">Cancelar</button>
+                                                            <button class="btn btn-secondary " data-dismiss="modal">Cancelar</button>
                                                         </div>
                                                         <div class="p-2 bd-highlight">
-                                                            <button class="btn btn-outline-primary "
-                                                                data-dismiss="modal">Guardar</button></div>
+                                                            <button class="btn btn-outline-primary " data-dismiss="modal">Guardar</button></div>
                                                     </div>
                                                 </form>
                                             </div>
@@ -310,24 +270,23 @@
                     <div class="d-flex align-items-center justify-content-between small">
                         <div class="text-muted">Copyright &copy; Your Website 2019</div>
                         <div>
-                            <a href="#">Privacy Policy</a>
-                            &middot;
+                            <a href="#">Privacy Policy</a> &middot;
                             <a href="#">Terms &amp; Conditions</a>
                         </div>
                     </div>
                 </div>
             </footer>
+            </div>
         </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
-        crossorigin="anonymous"></script>
-    <script src="./js/scripts.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-    <script src="./assets/demo/chart-area-demo.js"></script>
-    <script src="./assets/demo/chart-bar-demo.js"></script>
-    <script src="./assets/demo/chart-pie-demo.js"></script>
-    <script type="text/javascript" src="../../../negocios/js/shared/cerrar_sesion/cerrar_sesion.js"></script>
+        <script type="text/javascript" src="../../../negocios/js/shared/foto_perfil/mostrar.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="./js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="./assets/demo/chart-area-demo.js"></script>
+        <script src="./assets/demo/chart-bar-demo.js"></script>
+        <script src="./assets/demo/chart-pie-demo.js"></script>
+        <script type="text/javascript" src="../../../negocios/js/shared/cerrar_sesion/cerrar_sesion.js"></script>
 </body>
 
 </html>
